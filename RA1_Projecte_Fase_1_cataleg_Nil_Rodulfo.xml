@@ -1,20 +1,77 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <botiga nom="Tech&amp;Rol" moneda="EUR" ultimaActualització="28/09/2026">
   <cataleg>
     <producte>
-      <codi></codi>
-      <nom></nom>
+      <codi>PR001</codi>
+      <nom>Flipper Zero</nom>
       <categories>
-        <categoria></categoria>
+        <categoria>Hacking</categoria>
+        <categoria>Xarxes</categoria>
+        <categoria>Eina</categoria>
       </categories>
       <tags>
         <tag></tag>
       </tags>
-      <preu></preu>
-      <valoracio></valoracio>
-      <estoc></estoc>
-      <dataIncorporacio mostrarAbans="si" quanMostrar="DD/MM/AAAA"></dataIncorporacio>
-      <descripcio></descripcio>
+      <preu>185€</preu>
+      <valoracio>4,3</valoracio>
+      <estoc>8</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">01/01/1970</dataIncorporacio>
+      <descripcio>Flipper Zero és un dispositiu portàtil multifuncional, pensat per interactuar amb sistemes de control d'accés. És capaç de simular RFID, NFC, ràdio o infraroig, entre d'altres.</descripcio>
     </producte>
+    
+    <producte>
+      <codi>PR002</codi>
+      <nom>Flipper Zero</nom>
+      <categories>
+        <categoria>Hacking</categoria>
+        <categoria>Xarxes</categoria>
+        <categoria>Eina</categoria>
+      </categories>
+      <tags>
+        <tag></tag>
+      </tags>
+      <preu>185€</preu>
+      <valoracio>4,3</valoracio>
+      <estoc>8</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">01/01/1970</dataIncorporacio>
+      <descripcio>Flipper Zero és un dispositiu portàtil multifuncional, pensat per interactuar amb sistemes de control d'accés. És capaç de simular RFID, NFC, ràdio o infraroig, entre d'altres.</descripcio>
+    </producte>
+    
+    <producte>
+      <codi>PR003</codi>
+      <nom>Flipper Zero</nom>
+      <categories>
+        <categoria>Hacking</categoria>
+        <categoria>Xarxes</categoria>
+        <categoria>Eina</categoria>
+      </categories>
+      <tags>
+        <tag></tag>
+      </tags>
+      <preu>185€</preu>
+      <valoracio>4,3</valoracio>
+      <estoc>8</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">01/01/1970</dataIncorporacio>
+      <descripcio>Flipper Zero és un dispositiu portàtil multifuncional, pensat per interactuar amb sistemes de control d'accés. És capaç de simular RFID, NFC, ràdio o infraroig, entre d'altres.</descripcio>
+    </producte>
+
+    <producte>
+      <codi>PR004</codi>
+      <nom>Mòdul GPS</nom>
+      <categories>
+        <categoria>GPS</categoria>
+      </categories>
+      <tags>
+        <tag></tag>
+      </tags>
+      <preu>14,95€</preu>
+      <valoracio>3,8</valoracio>
+      <estoc>23</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">01/01/1970</dataIncorporacio>
+      <descripcio>Aquest mòdul de GPS per GPIO és un petit dispositiu que pot connectar-se al I/O d'un altra placa per oferir-la dades d'ubicació a través de satèl·lit.<descripcio>
+    </producte>
+
+
+
   </cataleg>
-</botiga> 
+</botiga>
