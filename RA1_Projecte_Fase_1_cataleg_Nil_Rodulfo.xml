@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<botiga nom="Tech&amp;Rol" moneda="EUR" ultimaActualització="28/09/2026">
+  <cataleg>
+    <producte>
+      <codi></codi>
+      <nom></nom>
+      <categories>
+        <categoria></categoria>
+      </categories>
+      <tags>
+        <tag></tag>
+      </tags>
+      <preu></preu>
+      <valoracio></valoracio>
+      <estoc></estoc>
+      <dataIncorporacio mostrarAbans="si" quanMostrar="DD/MM/AAAA"></dataIncorporacio>
+      <descripcio></descripcio>
+    </producte>
+  </cataleg>
+</botiga> 
