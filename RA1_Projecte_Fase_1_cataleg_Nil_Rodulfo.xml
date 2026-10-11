@@ -1,46 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE botiga [
-<!ELEMENT botiga (cataleg)>
-<!ATTLIST botiga nom CDATA #REQUIRED>
-<!ATTLIST botiga moneda CDATA "EUR">
-<!ATTLIST botiga ultimaActualitzacio CDATA #REQUIRED>
-<!ELEMENT cataleg (producte+)>
-<!ELEMENT producte (codi, nom, categories, tags, preu, valoracio, estoc, dataIncorporacio, descripcio)>
-<!ELEMENT codi (#PCDATA)>
-<!ELEMENT nom (#PCDATA)>
-<!ELEMENT categories (categoria, categoria+)>
-<!ELEMENT categoria (#PCDATA)>
-<!ELEMENT tags (tag, tag, tag+)>
-<!ELEMENT tag (#PCDATA)>
-<!ELEMENT preu (#PCDATA)>
-<!ELEMENT valoracio (#PCDATA)>
-<!ELEMENT estoc (#PCDATA)>
-<!ELEMENT dataIncorporacio (#PCDATA)>
-<!ATTLIST dataIncorporacio mostrarAbans CDATA "no">
-<!ATTLIST dataIncorporacio quanMostrar CDATA "01/01/1970">
-<!ELEMENT descripcio (#PCDATA)>
-]>
-<botiga nom="Tech&amp;Rol" moneda="EUR" ultimaActualitzacio="5/10/2026">
-  <cataleg>
-
+<botiga nom="Tech &amp; Variables" moneda="EUR" ultimaActualitzacio="09/10/2026">
+  <!-- El cataleg agruparà els productes relacionats amb el tipus especificat a l'atribut -->
+  <cataleg tipus="Electrònica">
+    
     <producte>
+      <!-- Codi intern, únic per cada producte -->
       <codi>PR001</codi>
+      <!-- Nom del producte -->
       <nom>Flipper Zero</nom>
+      <!-- Cada item tindrà dos o més categories, que l'ajudaran a classificar-lo. -->
       <categories>
         <categoria>Hacking</categoria>
         <categoria>Xarxes</categoria>
         <categoria>Eina</categoria>
       </categories>
+      <!-- També comptarà amb etiquetes, que indicaran característiques o usos que tingui el producte. Mínim 3 -->
       <tags>
         <tag>RFID</tag>
         <tag>NFC</tag>
         <tag>Infraroig</tag>
         <tag>Portàtil</tag>
       </tags>
-      <preu>185€</preu>
+      <!-- Si el producte té versions diferents, es podran especificar les opcions i els seus valors possibles (color, memòria...) -->
+      <opcions/>
+      <!-- Indica el preu de cada producte. Com que la moneda és epecificada a l'arrel, no cal indicar el símbol € -->
+      <preu>185</preu>
+      <!-- Escala de valoració de cada producte, d'1 (mínim) a 5 (màxim) -->
       <valoracio>4,3</valoracio>
       <estoc>8</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">01/01/1970</dataIncorporacio>
+      <!-- Indicarà quan s'acaba la preventa d'un producte, si mostrarAbans és actiu. quanMostrar indica
+      quan comença la preventa, i el valor de l'etiqueta és quan comença la venda normal. -->
+      <dataIncorporacio mostrarAbans="no" quanMostrar="25/12/1969">01/01/1970</dataIncorporacio>
+      <!-- Descripció del producte-->
       <descripcio>Dispositiu portàtil multifuncional pensat per interactuar amb sistemes de control d'accés i diferents protocols sense fil.</descripcio>
     </producte>
 
@@ -49,19 +40,24 @@
       <nom>Raspberry Pi 5</nom>
       <categories>
         <categoria>Informàtica</categoria>
-        <categoria>Electrònica</categoria>
+        <categoria>Microordinadors</categoria>
         <categoria>Programació</categoria>
       </categories>
       <tags>
         <tag>Microordinador</tag>
         <tag>Linux</tag>
         <tag>GPIO</tag>
-        <tag>8GB RAM</tag>
       </tags>
-      <preu>89,90€</preu>
+      <opcions>
+        <opcio nom="RAM">
+          <valor>4 GB</valor>
+          <valor>8 GB</valor>
+        </opcio>
+      </opcions>
+      <preu>89,90</preu>
       <valoracio>4,8</valoracio>
       <estoc>15</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">15/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="08/09/2026">15/09/2026</dataIncorporacio>
       <descripcio>Microordinador compacte amb gran capacitat de processament, connexions GPIO i suport per a diferents sistemes operatius.</descripcio>
     </producte>
 
@@ -69,7 +65,7 @@
       <codi>PR003</codi>
       <nom>Arduino Uno R4 WiFi</nom>
       <categories>
-        <categoria>Electrònica</categoria>
+        <categoria>Microcontroladors</categoria>
         <categoria>Programació</categoria>
         <categoria>IoT</categoria>
       </categories>
@@ -79,10 +75,11 @@
         <tag>Bluetooth</tag>
         <tag>GPIO</tag>
       </tags>
-      <preu>27,50€</preu>
+      <opcions/>
+      <preu>27,50</preu>
       <valoracio>4,6</valoracio>
       <estoc>31</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">18/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="11/09/2026">18/09/2026</dataIncorporacio>
       <descripcio>Placa de desenvolupament amb microcontrolador, connectivitat sense fil i múltiples entrades i sortides digitals i analògiques.</descripcio>
     </producte>
 
@@ -91,7 +88,7 @@
       <nom>Mòdul GPS</nom>
       <categories>
         <categoria>GPS</categoria>
-        <categoria>Electrònica</categoria>
+        <categoria>Navegació i posicionament</categoria>
       </categories>
       <tags>
         <tag>GPS</tag>
@@ -99,10 +96,11 @@
         <tag>Satèl·lit</tag>
         <tag>Ubicació</tag>
       </tags>
-      <preu>14,95€</preu>
+      <opcions/>
+      <preu>14,95</preu>
       <valoracio>3,8</valoracio>
       <estoc>23</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">20/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="13/09/2026">20/09/2026</dataIncorporacio>
       <descripcio>Mòdul GPS per GPIO que es pot connectar a una placa per proporcionar dades d'ubicació mitjançant senyals de satèl·lit.</descripcio>
     </producte>
 
@@ -112,7 +110,7 @@
       <categories>
         <categoria>IoT</categoria>
         <categoria>Programació</categoria>
-        <categoria>Electrònica</categoria>
+        <categoria>Microcontroladors</categoria>
       </categories>
       <tags>
         <tag>WiFi</tag>
@@ -120,10 +118,11 @@
         <tag>Microcontrolador</tag>
         <tag>GPIO</tag>
       </tags>
-      <preu>12,90€</preu>
+      <opcions/>
+      <preu>12,90</preu>
       <valoracio>4,7</valoracio>
       <estoc>42</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">21/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="14/09/2026">21/09/2026</dataIncorporacio>
       <descripcio>Placa de desenvolupament basada en ESP32, adequada per a projectes d'Internet de les coses i automatització.</descripcio>
     </producte>
 
@@ -133,7 +132,7 @@
       <categories>
         <categoria>Sensors</categoria>
         <categoria>IoT</categoria>
-        <categoria>Electrònica</categoria>
+        <categoria>Mesurament ambiental</categoria>
       </categories>
       <tags>
         <tag>Temperatura</tag>
@@ -141,10 +140,11 @@
         <tag>Pressió</tag>
         <tag>Sensor</tag>
       </tags>
-      <preu>24,95€</preu>
+      <opcions/>
+      <preu>24,95</preu>
       <valoracio>4,2</valoracio>
       <estoc>18</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">22/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="15/09/2026">22/09/2026</dataIncorporacio>
       <descripcio>Kit de sensors per mesurar diferents valors ambientals i integrar-les en projectes.</descripcio>
     </producte>
 
@@ -161,10 +161,11 @@
         <tag>USB</tag>
         <tag>QWERTY</tag>
       </tags>
-      <preu>59,99€</preu>
+      <opcions/>
+      <preu>59,99</preu>
       <valoracio>4,5</valoracio>
       <estoc>12</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">22/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="15/09/2026">22/09/2026</dataIncorporacio>
       <descripcio>Teclat mecànic amb il·luminació RGB, connexió USB i disseny orientat a gaming i escriptura.</descripcio>
     </producte>
 
@@ -181,10 +182,11 @@
         <tag>PCIe</tag>
         <tag>Alta velocitat</tag>
       </tags>
-      <preu>74,99€</preu>
+      <opcions/>
+      <preu>74,99</preu>
       <valoracio>4,7</valoracio>
       <estoc>19</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">23/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="16/09/2026">23/09/2026</dataIncorporacio>
       <descripcio>Disc SSD NVMe d'1 TB pensada per oferir altes velocitats de lectura i escriptura.</descripcio>
     </producte>
 
@@ -201,10 +203,11 @@
         <tag>USB 3.0</tag>
         <tag>Ethernet</tag>
       </tags>
-      <preu>39,95€</preu>
+      <opcions/>
+      <preu>39,95</preu>
       <valoracio>4,1</valoracio>
       <estoc>25</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">24/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="17/09/2026">24/09/2026</dataIncorporacio>
       <descripcio>Adaptador compacte amb diversos ports per ampliar les opcions de connectivitat d'ordinadors portàtils.</descripcio>
     </producte>
 
@@ -221,10 +224,11 @@
         <tag>75Hz</tag>
         <tag>IPS</tag>
       </tags>
-      <preu>129,90€</preu>
+      <opcions/>
+      <preu>129,90</preu>
       <valoracio>4,3</valoracio>
       <estoc>10</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">24/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="17/09/2026">24/09/2026</dataIncorporacio>
       <descripcio>Monitor IPS de 24 polzades amb resolució Full HD i freqüència de refresc de 75 Hz.</descripcio>
     </producte>
 
@@ -241,10 +245,11 @@
         <tag>Càrrega ràpida</tag>
         <tag>Portàtil</tag>
       </tags>
-      <preu>29,90€</preu>
+      <opcions/>
+      <preu>29,90</preu>
       <valoracio>4,5</valoracio>
       <estoc>34</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">25/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="18/09/2026">25/09/2026</dataIncorporacio>
       <descripcio>Bateria externa de gran capacitat amb connexió USB-C i suport per a càrrega ràpida de dispositius.</descripcio>
     </producte>
 
@@ -262,10 +267,11 @@
         <tag>Motors</tag>
         <tag>Programació</tag>
       </tags>
-      <preu>79,95€</preu>
+      <opcions/>
+      <preu>79,95</preu>
       <valoracio>4,6</valoracio>
       <estoc>9</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">26/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="19/09/2026">26/09/2026</dataIncorporacio>
       <descripcio>Kit educatiu amb sensors, motors i components per construir i programar petits sistemes.</descripcio>
     </producte>
 
@@ -273,7 +279,7 @@
       <codi>PR013</codi>
       <nom>Kit de Cablejat Electrònic</nom>
       <categories>
-        <categoria>Electrònica</categoria>
+        <categoria>Cablejat i connexions</categoria>
         <categoria>Accessoris</categoria>
         <categoria>DIY</categoria>
       </categories>
@@ -283,10 +289,11 @@
         <tag>GPIO</tag>
         <tag>Protoboard</tag>
       </tags>
-      <preu>16,50€</preu>
+      <opcions/>
+      <preu>16,50</preu>
       <valoracio>4,4</valoracio>
       <estoc>38</estoc>
-      <dataIncorporacio mostrarAbans="no" quanMostrar="01/01/1970">28/09/2026</dataIncorporacio>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="21/09/2026">28/09/2026</dataIncorporacio>
       <descripcio>Conjunt de cables i accessoris per realitzar connexions en protoboards i projectes amb plaques de desenvolupament.</descripcio>
     </producte>
 
