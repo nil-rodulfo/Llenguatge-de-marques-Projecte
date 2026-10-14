@@ -1,0 +1,43 @@
+<!ELEMENT botiga (cataleg+)>
+<!ATTLIST botiga
+    nom CDATA #REQUIRED
+    moneda CDATA "EUR"
+    ultimaActualitzacio CDATA #REQUIRED>
+
+<!ELEMENT cataleg (producte+)>
+<!ATTLIST cataleg tipus ID #REQUIRED>
+
+<!ELEMENT producte (nom, categories, tags, opcions, preu, valoracio, estoc, dataIncorporacio, descripcio)>
+<!ATTLIST producte 
+    codi ID #REQUIRED
+    productesRelacionats IDREFS #IMPLIED>
+
+    <!ELEMENT nom (#PCDATA)>
+    
+    <!ELEMENT categories (categoria, categoria+)>
+        <!ELEMENT categoria (#PCDATA)>
+    
+    <!ELEMENT tags (tag, tag, tag+)>
+        <!ELEMENT tag (#PCDATA)>
+    
+    <!ELEMENT opcions (opcio*)>
+        <!ELEMENT opcio (valor, valor+)>
+        <!ATTLIST opcio nom CDATA #REQUIRED>
+            <!ELEMENT valor (#PCDATA)>
+
+    <!ELEMENT preu (#PCDATA)>
+    
+    <!ELEMENT valoracio (#PCDATA)>
+    
+    <!ELEMENT estoc (#PCDATA)>
+    
+    <!ELEMENT dataIncorporacio (#PCDATA)>
+        <!ATTLIST dataIncorporacio 
+        mostrarAbans CDATA "no"
+        quanMostrar CDATA "01/01/1970">
+    
+    <!ELEMENT descripcio (#PCDATA)>
+
+    <!ENTITY it "Informàtica">
+    <!ENTITY microC "Microcontrolador">
+    

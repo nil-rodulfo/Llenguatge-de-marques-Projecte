@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE botiga SYSTEM "RA4_Projecte_Fase_1_cataleg_Nil_Rodulfo.dtd">
 <botiga nom="Tech &amp; Variables" moneda="EUR" ultimaActualitzacio="09/10/2026">
   <!-- El cataleg agruparà els productes relacionats amb el tipus especificat a l'atribut -->
   <cataleg tipus="Electrònica">
-    
-    <producte>
-      <!-- Codi intern, únic per cada producte -->
-      <codi>PR001</codi>
+
+    <!-- Codi intern, únic per cada producte -->
+    <producte codi="PR001">
+
       <!-- Nom del producte -->
       <nom>Flipper Zero</nom>
+
       <!-- Cada item tindrà dos o més categories, que l'ajudaran a classificar-lo. -->
       <categories>
         <categoria>Hacking</categoria>
         <categoria>Xarxes</categoria>
         <categoria>Eina</categoria>
       </categories>
+
       <!-- També comptarà amb etiquetes, que indicaran característiques o usos que tingui el producte. Mínim 3 -->
       <tags>
         <tag>RFID</tag>
@@ -21,25 +24,31 @@
         <tag>Infraroig</tag>
         <tag>Portàtil</tag>
       </tags>
+
       <!-- Si el producte té versions diferents, es podran especificar les opcions i els seus valors possibles (color, memòria...) -->
       <opcions/>
+
       <!-- Indica el preu de cada producte. Com que la moneda és epecificada a l'arrel, no cal indicar el símbol € -->
       <preu>185</preu>
+
       <!-- Escala de valoració de cada producte, d'1 (mínim) a 5 (màxim) -->
       <valoracio>4,3</valoracio>
+
       <estoc>8</estoc>
+
       <!-- Indicarà quan s'acaba la preventa d'un producte, si mostrarAbans és actiu. quanMostrar indica
       quan comença la preventa, i el valor de l'etiqueta és quan comença la venda normal. -->
       <dataIncorporacio mostrarAbans="no" quanMostrar="25/12/1969">01/01/1970</dataIncorporacio>
+
       <!-- Descripció del producte-->
       <descripcio>Dispositiu portàtil multifuncional pensat per interactuar amb sistemes de control d'accés i diferents protocols sense fil.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR002</codi>
+    <producte codi="PR002">
+      
       <nom>Raspberry Pi 5</nom>
       <categories>
-        <categoria>Informàtica</categoria>
+        <categoria>&it;</categoria>
         <categoria>Microordinadors</categoria>
         <categoria>Programació</categoria>
       </categories>
@@ -61,16 +70,16 @@
       <descripcio>Microordinador compacte amb gran capacitat de processament, connexions GPIO i suport per a diferents sistemes operatius.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR003</codi>
+    <producte codi="PR003">
+      
       <nom>Arduino Uno R4 WiFi</nom>
       <categories>
-        <categoria>Microcontroladors</categoria>
+        <categoria>&microC;s</categoria>
         <categoria>Programació</categoria>
         <categoria>IoT</categoria>
       </categories>
       <tags>
-        <tag>Microcontrolador</tag>
+        <tag>&microC;</tag>
         <tag>WiFi</tag>
         <tag>Bluetooth</tag>
         <tag>GPIO</tag>
@@ -80,11 +89,11 @@
       <valoracio>4,6</valoracio>
       <estoc>31</estoc>
       <dataIncorporacio mostrarAbans="no" quanMostrar="11/09/2026">18/09/2026</dataIncorporacio>
-      <descripcio>Placa de desenvolupament amb microcontrolador, connectivitat sense fil i múltiples entrades i sortides digitals i analògiques.</descripcio>
+      <descripcio>Placa de desenvolupament amb &microC;, connectivitat sense fil i múltiples entrades i sortides digitals i analògiques.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR004</codi>
+    <producte codi="PR004">
+      
       <nom>Mòdul GPS</nom>
       <categories>
         <categoria>GPS</categoria>
@@ -104,18 +113,17 @@
       <descripcio>Mòdul GPS per GPIO que es pot connectar a una placa per proporcionar dades d'ubicació mitjançant senyals de satèl·lit.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR005</codi>
+    <producte codi="PR005">
       <nom>ESP32 DevKit</nom>
       <categories>
         <categoria>IoT</categoria>
         <categoria>Programació</categoria>
-        <categoria>Microcontroladors</categoria>
+        <categoria>&microC;s</categoria>
       </categories>
       <tags>
         <tag>WiFi</tag>
         <tag>Bluetooth</tag>
-        <tag>Microcontrolador</tag>
+        <tag>&microC;</tag>
         <tag>GPIO</tag>
       </tags>
       <opcions/>
@@ -126,8 +134,7 @@
       <descripcio>Placa de desenvolupament basada en ESP32, adequada per a projectes d'Internet de les coses i automatització.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR006</codi>
+    <producte codi="PR006">
       <nom>Kit Sensor Ambiental</nom>
       <categories>
         <categoria>Sensors</categoria>
@@ -148,8 +155,7 @@
       <descripcio>Kit de sensors per mesurar diferents valors ambientals i integrar-les en projectes.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR007</codi>
+    <producte codi="PR007">
       <nom>Teclat Mecànic RGB</nom>
       <categories>
         <categoria>Perifèrics</categoria>
@@ -169,12 +175,11 @@
       <descripcio>Teclat mecànic amb il·luminació RGB, connexió USB i disseny orientat a gaming i escriptura.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR008</codi>
+    <producte codi="PR008">
       <nom>SSD NVMe 1TB</nom>
       <categories>
         <categoria>Emmagatzematge</categoria>
-        <categoria>Informàtica</categoria>
+        <categoria>&it;</categoria>
       </categories>
       <tags>
         <tag>NVMe</tag>
@@ -190,8 +195,7 @@
       <descripcio>Disc SSD NVMe d'1 TB pensada per oferir altes velocitats de lectura i escriptura.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR009</codi>
+    <producte codi="PR009">
       <nom>Adaptador USB-C Multiport</nom>
       <categories>
         <categoria>Accessoris</categoria>
@@ -211,12 +215,11 @@
       <descripcio>Adaptador compacte amb diversos ports per ampliar les opcions de connectivitat d'ordinadors portàtils.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR010</codi>
+    <producte codi="PR010">
       <nom>Monitor 24 polzades Full HD</nom>
       <categories>
         <categoria>Monitors</categoria>
-        <categoria>Informàtica</categoria>
+        <categoria>&it;</categoria>
       </categories>
       <tags>
         <tag>24 polzades</tag>
@@ -232,8 +235,7 @@
       <descripcio>Monitor IPS de 24 polzades amb resolució Full HD i freqüència de refresc de 75 Hz.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR011</codi>
+    <producte codi="PR011">
       <nom>Bateria portàtil 20.000 mAh</nom>
       <categories>
         <categoria>Accessoris</categoria>
@@ -253,8 +255,7 @@
       <descripcio>Bateria externa de gran capacitat amb connexió USB-C i suport per a càrrega ràpida de dispositius.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR012</codi>
+    <producte codi="PR012">
       <nom>Kit de Robòtica Educativa</nom>
       <categories>
         <categoria>Robòtica</categoria>
@@ -275,8 +276,7 @@
       <descripcio>Kit educatiu amb sensors, motors i components per construir i programar petits sistemes.</descripcio>
     </producte>
 
-    <producte>
-      <codi>PR013</codi>
+    <producte codi="PR0013">
       <nom>Kit de Cablejat Electrònic</nom>
       <categories>
         <categoria>Cablejat i connexions</categoria>
