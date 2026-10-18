@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE botiga SYSTEM "RA4_Projecte_Fase_1_cataleg_Nil_Rodulfo.dtd">
+<botiga nom="Tech &amp; Variables" moneda="EUR" ultimaActualitzacio="16/10/2026">
+  <!-- El cataleg agruparà els productes relacionats amb el tipus especificat a l'atribut -->
+  <cataleg tipus="Electrònica">
+
+    <!-- Codi intern, únic per cada producte. I d'altres productes relacionats. -->
+    <producte codi="PR001" productesRelacionats="PR004 PR009">
+
+      <!-- Nom del producte -->
+      <nom>Flipper Zero</nom>
+
+      <!-- Cada item tindrà dos o més categories, que l'ajudaran a classificar-lo. -->
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>Hacking</categoria>
+        <categoria>Xarxes</categoria>
+        <categoria>Eina</categoria>
+      </categories>
+
+      <!-- També comptarà amb etiquetes, que indicaran característiques o usos que tingui el producte. Mínim 3 -->
+      <tags>
+        <tag>RFID</tag>
+        <tag>NFC</tag>
+        <tag>Infraroig</tag>
+        <tag>Portàtil</tag>
+      </tags>
+
+      <!-- Si el producte té versions diferents, es podran especificar les opcions i els seus valors possibles (color, memòria...) -->
+      <opcions>
+        <opcio nom="Protecció inclosa">
+          <valor>Funda protectora de silicona</valor>
+          <valor>Sense</valor>
+        </opcio>
+      </opcions>
+
+      <!-- Indica el preu de cada producte. Com que la moneda és epecificada a l'arrel, no cal indicar el símbol € -->
+      <preu>185&eur;</preu>
+
+      <!-- Escala de valoració de cada producte, d'1 (mínim) a 5 (màxim) -->
+      <valoracio>4,3</valoracio>
+
+      <estoc ubicacioEstoc="Botiga">8</estoc>
+      <estoc ubicacioEstoc="MagatzemManresa">3</estoc>
+
+      <!-- Indicarà quan s'acaba la preventa d'un producte, si mostrarAbans és actiu. quanMostrar indica
+      quan comença la preventa, i el valor de l'etiqueta és quan comença la venda normal. -->
+      <dataIncorporacio mostrarAbans="no" quanMostrar="25/12/1969">01/01/1970</dataIncorporacio>
+
+      <!-- Descripció del producte-->
+      <descripcio>Dispositiu portàtil multifuncional pensat per interactuar amb sistemes de control d'accés i diferents protocols sense fil.</descripcio>
+    </producte>
+
+    <producte codi="PR003" productesRelacionats="PR002 PR005 PR006 PR012">
+      
+      <nom>Arduino Uno R4 WiFi</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>&microC;s</categoria>
+        <categoria>Programació</categoria>
+        <categoria>IoT</categoria>
+      </categories>
+      <tags>
+        <tag>&microC;</tag>
+        <tag>WiFi</tag>
+        <tag>Bluetooth</tag>
+        <tag>GPIO</tag>
+      </tags>
+      <opcions>
+        <opcio nom="Connectivitat">
+          <valor>WiFi</valor>
+          <valor>WiFi i Bluetooth</valor>
+        </opcio>
+      </opcions>
+      <preu>27,50&eur;</preu>
+      <valoracio>4,6</valoracio>
+      <estoc ubicacioEstoc="MagatzemTarragona">31</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="11/09/2026">18/09/2026</dataIncorporacio>
+      <descripcio>Placa de desenvolupament amb &microC;, connectivitat sense fil i múltiples entrades i sortides digitals i analògiques.</descripcio>
+    </producte>
+
+    <producte codi="PR004" productesRelacionats="PR003 PR005">
+      
+      <nom>Mòdul GPS</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>GPS</categoria>
+        <categoria>Navegació i posicionament</categoria>
+      </categories>
+      <tags>
+        <tag>GPS</tag>
+        <tag>GPIO</tag>
+        <tag>Satèl·lit</tag>
+        <tag>Ubicació</tag>
+      </tags>
+      <preu>14,95&eur;</preu>
+      <valoracio>3,8</valoracio>
+      <estoc ubicacioEstoc="Botiga">23</estoc>
+      <estoc ubicacioEstoc="MagatzemManresa">5</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="13/09/2026">20/09/2026</dataIncorporacio>
+      <descripcio>Mòdul GPS per GPIO que es pot connectar a una placa per proporcionar dades d'ubicació mitjançant senyals de satèl·lit.</descripcio>
+    </producte>
+
+    <producte codi="PR005" productesRelacionats="PR002 PR003 PR004 PR006">
+      <nom>ESP32 DevKit</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>IoT</categoria>
+        <categoria>Programació</categoria>
+        <categoria>&microC;s</categoria>
+      </categories>
+      <tags>
+        <tag>WiFi</tag>
+        <tag>Bluetooth</tag>
+        <tag>&microC;</tag>
+        <tag>GPIO</tag>
+      </tags>
+      <preu>12,90&eur;</preu>
+      <valoracio>4,7</valoracio>
+      <estoc ubicacioEstoc="MagatzemTarragona">42</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="14/09/2026">21/09/2026</dataIncorporacio>
+      <descripcio>Placa de desenvolupament basada en ESP32, adequada per a projectes d'Internet de les coses i automatització.</descripcio>
+    </producte>
+
+    <producte codi="PR006" productesRelacionats="PR003 PR005 PR012">
+      <nom>Kit Sensor Ambiental</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>Sensors</categoria>
+        <categoria>IoT</categoria>
+        <categoria>Mesurament ambiental</categoria>
+      </categories>
+      <tags>
+        <tag>Temperatura</tag>
+        <tag>Humitat</tag>
+        <tag>Pressió</tag>
+        <tag>Sensor</tag>
+      </tags>
+      <preu>24,95&eur;</preu>
+      <valoracio>4,2</valoracio>
+      <estoc ubicacioEstoc="Botiga">18</estoc>
+      <estoc ubicacioEstoc="MagatzemManresa">4</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="15/09/2026">22/09/2026</dataIncorporacio>
+      <descripcio>Kit de sensors per mesurar diferents valors ambientals i integrar-les en projectes.</descripcio>
+    </producte>
+
+    <producte codi="PR012" productesRelacionats="PR003 PR005 PR006">
+      <nom>Kit de Robòtica Educativa</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>Robòtica</categoria>
+        <categoria>Educació</categoria>
+        <categoria>Programació</categoria>
+      </categories>
+      <tags>
+        <tag>Robòtica</tag>
+        <tag>Sensors</tag>
+        <tag>Motors</tag>
+        <tag>Programació</tag>
+      </tags>
+      <opcions>
+        <opcio nom="Nivell">
+          <valor>Bàsic</valor>
+          <valor>Avançat</valor>
+        </opcio>
+      </opcions>
+      <preu>79,95&eur;</preu>
+      <valoracio>4,6</valoracio>
+
+      <dataIncorporacio mostrarAbans="no" quanMostrar="19/09/2026">26/09/2026</dataIncorporacio>
+      <descripcio>Kit educatiu amb sensors, motors i components per construir i programar petits sistemes.</descripcio>
+    </producte>
+
+    <producte codi="PR013" productesRelacionats="PR003 PR005 PR012">
+      <nom>Kit de Cablejat Electrònic</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>Cablejat i connexions</categoria>
+        <categoria>Accessoris</categoria>
+        <categoria>DIY</categoria>
+      </categories>
+      <tags>
+        <tag>Jumper</tag>
+        <tag>Dupont</tag>
+        <tag>GPIO</tag>
+        <tag>Protoboard</tag>
+      </tags>
+      <opcions>
+        <opcio nom="Quantitat de cables">
+          <valor>50</valor>
+          <valor>100</valor>
+          <valor>250</valor>
+        </opcio>
+        <opcio nom="Color dels cables">
+          <valor>Negre</valor>
+          <valor>Vermell</valor>
+          <valor>Verd</valor>
+          <valor>Variat</valor>
+        </opcio>
+      </opcions>
+      <preu>16,50&eur;</preu>
+      <valoracio>4,4</valoracio>
+      <estoc ubicacioEstoc="Botiga">38</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="21/09/2026">28/09/2026</dataIncorporacio>
+      <descripcio>Conjunt de cables i accessoris per realitzar connexions en protoboards i projectes amb plaques de desenvolupament.</descripcio>
+    </producte>
+
+  </cataleg>
+  <cataleg tipus="Informàtica">
+        
+    <producte codi="PR002" productesRelacionats="PR003 PR005">
+      
+      <nom>Raspberry Pi 5</nom>
+      <categories categoriaPrincipal="Electrònica">
+        <categoria>&it;</categoria>
+        <categoria>Microordinadors</categoria>
+        <categoria>Programació</categoria>
+      </categories>
+      <tags>
+        <tag>Microordinador</tag>
+        <tag>Linux</tag>
+        <tag>GPIO</tag>
+      </tags>
+      <opcions>
+        <opcio nom="RAM">
+          <valor>4 GB</valor>
+          <valor>8 GB</valor>
+        </opcio>
+      </opcions>
+      <preu>89,90&eur;</preu>
+      <valoracio>4,8</valoracio>
+      <estoc ubicacioEstoc="MagatzemManresa">15</estoc>
+      <estoc ubicacioEstoc="Botiga">2</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="08/09/2026">15/09/2026</dataIncorporacio>
+      <descripcio>Microordinador compacte amb gran capacitat de processament, connexions GPIO i suport per a diferents sistemes operatius.</descripcio>
+    </producte>
+
+    <producte codi="PR007" productesRelacionats="PR009 PR010">
+      <nom>Teclat Mecànic RGB</nom>
+      <categories categoriaPrincipal="Informàtica">
+        <categoria>Perifèrics</categoria>
+        <categoria>Gaming</categoria>
+      </categories>
+      <tags>
+        <tag>Mecànic</tag>
+        <tag>RGB</tag>
+        <tag>USB</tag>
+        <tag>QWERTY</tag>
+      </tags>
+      <opcions>
+        <opcio nom="Distribució">
+          <valor>QWERTY espanyola</valor>
+          <valor>QWERTY internacional</valor>
+        </opcio>
+        <opcio nom="Il·luminació">
+          <valor>RGB</valor>
+          <valor>Blanca</valor>
+        </opcio>
+      </opcions>
+      <preu>59,99&eur;</preu>
+      <valoracio>4,5</valoracio>
+      <estoc ubicacioEstoc="Botiga">12</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="15/09/2026">22/09/2026</dataIncorporacio>
+      <descripcio>Teclat mecànic amb il·luminació RGB, connexió USB i disseny orientat a gaming i escriptura.</descripcio>
+    </producte>
+
+    <producte codi="PR008" productesRelacionats="PR002 PR010">
+      <nom>SSD NVMe 1TB</nom>
+      <categories categoriaPrincipal="Informàtica">
+        <categoria>Emmagatzematge</categoria>
+        <categoria>&it;</categoria>
+      </categories>
+      <tags>
+        <tag>NVMe</tag>
+        <tag>1TB</tag>
+        <tag>PCIe</tag>
+        <tag>Alta velocitat</tag>
+      </tags>
+      <preu>74,99&eur;</preu>
+      <valoracio>4,7</valoracio>
+      <estoc ubicacioEstoc="MagatzemTarragona">19</estoc>
+      <estoc ubicacioEstoc="Botiga">3</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="16/09/2026">23/09/2026</dataIncorporacio>
+      <descripcio>Disc SSD NVMe d'1 TB pensada per oferir altes velocitats de lectura i escriptura.</descripcio>
+    </producte>
+
+    <producte codi="PR010" productesRelacionats="PR007 PR008 PR009">
+      <nom>Monitor 24 polzades Full HD</nom>
+      <categories categoriaPrincipal="Informàtica">
+        <categoria>Monitors</categoria>
+        <categoria>&it;</categoria>
+      </categories>
+      <tags>
+        <tag>24 polzades</tag>
+        <tag>Full HD</tag>
+        <tag>75Hz</tag>
+        <tag>IPS</tag>
+      </tags>
+      <opcions>
+        <opcio nom="Mida">
+          <valor>24 polzades</valor>
+          <valor>27 polzades</valor>
+        </opcio>
+        <opcio nom="Resolució">
+          <valor>Full HD</valor>
+          <valor>QHD</valor>
+        </opcio>
+      </opcions>
+      <preu>129,90&eur;</preu>
+      <valoracio>4,3</valoracio>
+      <estoc ubicacioEstoc="Botiga">10</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="17/09/2026">24/09/2026</dataIncorporacio>
+      <descripcio>Monitor IPS de 24 polzades amb resolució Full HD i freqüència de refresc de 75 Hz.</descripcio>
+    </producte>
+
+  </cataleg>
+
+  <cataleg tipus="Altres">
+    <producte codi="PR009" productesRelacionats="PR007 PR010">
+      <nom>Adaptador USB-C Multiport</nom>
+      <categories categoriaPrincipal="Altres">
+        <categoria>Accessoris</categoria>
+        <categoria>Connectivitat</categoria>
+      </categories>
+      <tags>
+        <tag>USB-C</tag>
+        <tag>HDMI</tag>
+        <tag>USB 3.0</tag>
+        <tag>Ethernet</tag>
+      </tags>
+      <preu>39,95&eur;</preu>
+      <valoracio>4,1</valoracio>
+
+      <dataIncorporacio mostrarAbans="no" quanMostrar="17/09/2026">24/09/2026</dataIncorporacio>
+      <descripcio>Adaptador compacte amb diversos ports per ampliar les opcions de connectivitat d'ordinadors portàtils.</descripcio>
+    </producte>
+
+    <producte codi="PR011" productesRelacionats="PR009 PR005">
+      <nom>Bateria portàtil 20.000 mAh</nom>
+      <categories categoriaPrincipal="Altres">
+        <categoria>Accessoris</categoria>
+        <categoria>Energia</categoria>
+      </categories>
+      <tags>
+        <tag>20.000 mAh</tag>
+        <tag>USB-C</tag>
+        <tag>Càrrega ràpida</tag>
+        <tag>Portàtil</tag>
+      </tags>
+      <preu>29,90&eur;</preu>
+      <valoracio>4,5</valoracio>
+      <estoc ubicacioEstoc="MagatzemManresa">34</estoc>
+      <dataIncorporacio mostrarAbans="no" quanMostrar="18/09/2026">25/09/2026</dataIncorporacio>
+      <descripcio>Bateria externa de gran capacitat amb connexió USB-C i suport per a càrrega ràpida de dispositius.</descripcio>
+    </producte>
+
+  </cataleg>
+</botiga>

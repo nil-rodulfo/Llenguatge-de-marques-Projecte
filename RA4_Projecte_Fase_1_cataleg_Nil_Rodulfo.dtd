@@ -1,43 +1,77 @@
+<!-- La botiga pot contenir un catàleg o més -->
 <!ELEMENT botiga (cataleg+)>
+
+<!-- Aquesta etiqueta també contindrà informació sobre la botiga. 
+ Dos fixes (nom de la botiga i moneda usada) i una requerida (actualització) que cambiarà amb el temps -->
 <!ATTLIST botiga
-    nom CDATA #REQUIRED
-    moneda CDATA "EUR"
+    nom CDATA #FIXED "Tech &amp; Variables"
+    moneda CDATA #FIXED "EUR"
     ultimaActualitzacio CDATA #REQUIRED>
 
+<!-- Cada catàleg ha de tindre un o més productes -->
 <!ELEMENT cataleg (producte+)>
+
+<!-- I tindrà un atribut obligatori, que indicarà de quin tipus són els productes continguts.
+ Tipus ID, doncs no pot haver-hi dos catàleg del mateix tipus de productes -->
 <!ATTLIST cataleg tipus ID #REQUIRED>
 
-<!ELEMENT producte (nom, categories, tags, opcions, preu, valoracio, estoc, dataIncorporacio, descripcio)>
+<!-- Tots els elements són obligatoris, exceptuant opcions, ja que un producte pot tindre o no diferents versions -->
+<!ELEMENT producte (nom, categories, tags, opcions?, preu, valoracio, estoc*, dataIncorporacio, descripcio)>
+
+<!-- Producte també contindrà informació pròpia. El seu codi ÚNIC, així com referències a d'altres productes relacionats, amb IDREFS -->
 <!ATTLIST producte 
     codi ID #REQUIRED
     productesRelacionats IDREFS #IMPLIED>
 
+    <!-- El nom del producte-->
     <!ELEMENT nom (#PCDATA)>
     
+    <!-- Mínim dues categories, no hi ha màxim -->
     <!ELEMENT categories (categoria, categoria+)>
+
+    <!-- IDREF a una de les categories principals (els tipus del catàleg) -->
+    <!ATTLIST categories categoriaPrincipal IDREF #REQUIRED>
         <!ELEMENT categoria (#PCDATA)>
     
+    <!-- Mínim tres tags, no hi ha màxim -->
     <!ELEMENT tags (tag, tag, tag+)>
         <!ELEMENT tag (#PCDATA)>
     
-    <!ELEMENT opcions (opcio*)>
+    <!-- Si hi ha un element opcions (que pot no haver-hi), 
+    ha de tindre mínim una opció (si no l'etiqueta no fa res) que escollir -->
+    <!ELEMENT opcions (opcio+)>
+
+    <!-- Hi ha d'haver mínim dos valors diferents per cada opció, per poder escollir entre ells -->
         <!ELEMENT opcio (valor, valor+)>
+
+        <!-- Per saber de que es tracta l'opció -->
         <!ATTLIST opcio nom CDATA #REQUIRED>
+
             <!ELEMENT valor (#PCDATA)>
 
+    <!-- Preu del producte, pot ser qualsevol valor -->
     <!ELEMENT preu (#PCDATA)>
     
+    <!-- Valoració del producte -->
     <!ELEMENT valoracio (#PCDATA)>
     
+    <!-- Estoc del producte. Com que l'estoc pot repartir-se entre diverses ubicacions predefinides (botigues i magatzems)
+     Defineixo l'element amb un atribut que hi indica l'ubicació. Obligatori, doncs si hi ha estoc, s'ha de saber on està -->
     <!ELEMENT estoc (#PCDATA)>
+    <!ATTLIST estoc ubicacioEstoc (Botiga|MagatzemManresa|MagatzemTarragona) #REQUIRED>
     
+    <!-- Quan s'incorpora el producte. Indica si es mostrarà abans (si o no) de manera obligatòria.
+     Llavors es pot indicar quan, si és el cas.-->
     <!ELEMENT dataIncorporacio (#PCDATA)>
         <!ATTLIST dataIncorporacio 
-        mostrarAbans CDATA "no"
-        quanMostrar CDATA "01/01/1970">
+        mostrarAbans (si|no) #REQUIRED
+        quanMostrar CDATA #IMPLIED>
     
+    <!-- Descripció del producte -->
     <!ELEMENT descripcio (#PCDATA)>
 
-    <!ENTITY it "Informàtica">
-    <!ENTITY microC "Microcontrolador">
+<!-- Defineixo entitats per aquestes dues paraules i el símbol d'euro, ja que es repeteixen constantemnt al document -->
+<!ENTITY it "Informàtica">
+<!ENTITY microC "Microcontrolador">
+<!ENTITY eur "€">
     
