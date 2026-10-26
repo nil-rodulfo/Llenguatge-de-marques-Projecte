@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Llista de la compra</title>
+        <meta name="author" content="Nil Rodulfo">
+        <meta name="description" content="Llista compra">
+        <link rel="icon" href="iconaTech.png">
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <form action="#" method="POST">
+            <label for="name">Nom Complet</label>
+            <input type="text" id="name" name="name" placeholder="María García"><br>
+            
+            <label for="email">Correu electrònic</label>
+            <input type="email" id="email" name="email" placeholder="maria.garcia@gmail.com"><br>
+            
+            <label for="phone">Telèfon de contacte</label>
+            <input type="text" id="phone" name="phone" placeholder="123 456 789"><br>
+            
+            <label for="motiuConsulta">Motiu de consulta</label>
+            <select id="motiuConsulta">
+                <option value="papers">Papers</option>
+                <option value="interna">Gestió interna</option>
+                <option value="externa">Gestió externa</option>
+            </select><br>
+            
+            <label for="metodeContacte">Com prefereixes que et contactem?</label><br>
+            <input type="radio" id="contacte_email" name="contacte" value="Email"/>
+            <label for="contacte_email">Correu electrònic</label>
+            <input type="radio" id="contacte_telefon" name="contacte" value="Telefon"/>
+            <label for="contacte_email">Telefon / Whatsapp</label>
+            <br>
+            
+            <label for="missatge">Missatge</label><br>
+            <input type="text" id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge..."><br>
+            
+            <input type="checkbox" id="politicaPrivacitat" name="politicaPrivacitat">
+            <label for="politicaPrivacitat">Accepto la política de privacitat</label><br>
+            
+            <input type="submit" value="Enviar missatge">
+            <input type="reset" value="Netejar">
+        </form>
+    </body>
