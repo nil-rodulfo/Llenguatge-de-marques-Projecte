@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fitxa Producte</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estils.css">
+        <link rel="icon" href="img/iconaTech.png">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img id="imatgeTitol" src="img/iconaTech.png"> <span id="titolPagina">Tech & Variables</span>
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Catàleg</a></li>
+                    <li><a href="fitxa.html">Fitxa</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article id="fitxaProducte">
+            <figure>
+                <img id="imatgeProducte" src="img/placeholder.png">
+                <figcaption>Flipper Zero, eina versàtil per a hacking.</figcaption>
+            </figure>
+            <section id="descripcioProdcte">
+                <h1>Flipper Zero</h1>
+                <p>Bla bla bla</p>
+            </section>
+            <section id="formulariCompra">
+                <p>200 €</p>
+                <form>
+                    <label for="metodeContacte">Com prefereixes que et contactem?</label><br>
+                    <input type="radio" id="contacte_email" name="contacte" value="Email"/>
+                    <label for="contacte_email">Correu electrònic</label>
+                    <input type="radio" id="contacte_telefon" name="contacte" value="Telefon"/>
+                    <label for="contacte_email">Telefon / Whatsapp</label>
+                    <input type="submit" value="Afegir al carret">
+                </form>
+            </section>
+        </article>
+        <aside>
+            <h3>Productes relacionats</h3>
+            <section id="relacionats">
+                <div class="relacio">
+                    <h4>Cable de càrrega</h4>
+                    <figure>
+                        <img src="img/cable.jpg" class="imgRelacionat">
+                        <figcaption>Cable de càrrega, perparat pel dispositiu</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </aside>
+    </body>
+</html>

@@ -1,0 +1,191 @@
+/* Contingut del menú de navegació */
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  max-height: 3rem;
+}
+
+body {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 16px;
+}
+
+#titolPagina {
+    color:black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Fer desaparèixer el títol si la pantalla es fa molt petitat, per deixar espai */
+@media screen and (max-width: 540px){
+    #titolPagina {
+        display: none;
+    }
+}
+
+.logo img {
+    height: fit-content;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.logo a * {
+    display: inline-block;
+    max-height: 3rem;
+    vertical-align: middle;
+}   
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+}
+
+header a:hover {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+/* Cos de fitxa */
+#fitxaProducte {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#fitxaProducte > * {
+    max-width: minmax(540px, 40%);
+}
+
+#imatgeProducte {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Formulari de contacte */
+#contacte {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+/* Contenidor principal del formulari */
+form {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, sans-serif;
+}
+
+/* Etiquetes principals */
+form > label {
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+/* Camps de text, correu, telèfon, select i missatge */
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+/* Enfosquir el text del placeholder */
+form ::placeholder {
+  color: #9ca3af;
+}
+
+/* Efecte focus per als camps de selecció i text */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Estils específics per als Radio i Checkbox */
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 6px;
+  accent-color: #2563eb; /* Color blau per als controls natius */
+  cursor: pointer;
+}
+
+/* Etiquetes al costat dels ràdios i checkbox */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: normal;
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-right: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* Estils per als botons inferiors (Enviar i Netejar) */
+form input[type="submit"],
+form input[type="reset"] {
+  width: 48%;
+  padding: 12px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+/* Botó Enviar (Primari) */
+form input[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  margin-right: 4%;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+/* Botó Netejar (Secundari) */
+form input[type="reset"] {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+form input[type="reset"]:hover {
+  background-color: #d1d5db;
+}
+
+
