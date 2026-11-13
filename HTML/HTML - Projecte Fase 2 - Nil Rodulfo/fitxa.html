@@ -1,218 +1,180 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fitxa - Flipper Zero</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ca">
 
-        <link rel="stylesheet" href="css/estils.css">
-        <link rel="icon" href="img/iconaTech.png">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fitxa - Flipper Zero</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Carrego les fonts que utilitzarà la pàgina -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="css/estils.css">
+    <link rel="icon" href="img/iconaTech.png">
 
-    <body>
+    <!-- Carrego les fonts que utilitzarà la pàgina -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
 
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img id="imatgeTitol" src="img/iconaTech.png">
-                    <span id="titolPagina">Tech & Variables</span>
-                </a>
-            </div>
+<body>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Catàleg</a></li>
-                    <li><a href="fitxa.html" id="actual">Fitxa</a></li>
-                    <li><a href="contacte.html">Contacte</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img id="imatgeTitol" src="img/iconaTech.png">
+                <span id="titolPagina">Tech & Variables</span>
+            </a>
+        </div>
 
-        <article id="fitxaProducte">
+        <nav>
+            <ul>
+                <li><a href="index.html">Catàleg</a></li>
+                <li><a href="fitxa.html" id="actual">Fitxa</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <figure>
-                <img id="imatgeProducte" src="img/placeholder.png">
-                <figcaption>
-                    Flipper Zero, eina versàtil per a hacking.
-                </figcaption>
-            </figure>
+    <article id="fitxaProducte">
 
-            <section id="descripcioProdcte">
-                <h1>Flipper Zero</h1>
-                <p>Bla bla bla</p>
-            </section>
+        <figure>
+            <img id="imatgeProducte" src="img/flipper.png" alt="Flipper Zero">
+        </figure>
 
-            <section id="formulariCompra">
+        <section id="descripcioProdcte">
+            <h1>Flipper Zero</h1>
+            <p>Flipper Zero Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ipsum maximus, volutpat
+                ipsum non, iaculis est. Phasellus eu dolor et metus feugiat condimentum quis in diam. Proin vel iaculis
+                risus. Praesent consectetur purus ac purus vestibulum, eu facilisis dolor bibendum. Integer dapibus
+                metus ac metus ullamcorper, vel consectetur eros vestibulum. Nam et dictum eros. Donec convallis
+                ullamcorper pharetra. Nam sodales convallis consequat. Nunc vel hendrerit ante. Donec quis pulvinar
+                nisi, in tincidunt nibh. Morbi lacinia tristique tellus, vitae vehicula orci tempus eget. Curabitur
+                congue neque pulvinar urna fringilla, eu tincidunt leo elementum. Proin ut nisi felis.</p>
+            <p>Conté sensors i emissors de radiofrequència, RFID, infrarojos, </p>
+        </section>
 
-                <p>Preu base: 200 €</p>
+    </article>
 
-                <form action="#" method="post">
+    <div id="cos">
+        <section id="formulariCompra">
 
-                    <h3>Personalitza el teu Flipper Zero</h3>
+            <p>Preu base: 200 €</p>
 
-                    <p>
-                        Selecciona una de les opcions disponibles:
-                    </p>
+            <form action="#" method="post">
 
-                    <table>
-                        <tr>
-                            <th>Selecciona</th>
-                            <th>Opció del producte</th>
-                            <th>Cost addicional</th>
-                        </tr>
+                <h3>Personalitza el teu Flipper Zero</h3>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio0"
-                                    name="opcio"
-                                    value="Sense accessoris"
-                                    required
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio0">
-                                    Sense accessoris
-                                </label>
-                            </td>
-                            <td>0 €</td>
-                        </tr>
+                <p>
+                    Selecciona una de les opcions disponibles:
+                </p>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio1"
-                                    name="opcio"
-                                    value="Funda protectora"
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio1">
-                                    Funda protectora de silicona
-                                </label>
-                            </td>
-                            <td>8 €</td>
-                        </tr>
+                <table>
+                    <tr>
+                        <th>Selecciona</th>
+                        <th>Opció del producte</th>
+                        <th>Cost addicional</th>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio2"
-                                    name="opcio"
-                                    value="Protector pantalla"
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio2">
-                                    Protector de pantalla
-                                </label>
-                            </td>
-                            <td>5 €</td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio0" name="opcio" value="Sense accessoris" required>
+                        </td>
+                        <td>
+                            <label for="opcio0">
+                                Sense accessoris
+                            </label>
+                        </td>
+                        <td>0 €</td>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio3"
-                                    name="opcio"
-                                    value="MicroSD 32GB"
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio3">
-                                    Targeta microSD de 32 GB
-                                </label>
-                            </td>
-                            <td>10 €</td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio1" name="opcio" value="Funda protectora">
+                        </td>
+                        <td>
+                            <label for="opcio1">
+                                Funda protectora de silicona
+                            </label>
+                        </td>
+                        <td>8 €</td>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio4"
-                                    name="opcio"
-                                    value="MicroSD 64GB"
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio4">
-                                    Targeta microSD de 64 GB
-                                </label>
-                            </td>
-                            <td>15 €</td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio2" name="opcio" value="Protector pantalla">
+                        </td>
+                        <td>
+                            <label for="opcio2">
+                                Protector de pantalla
+                            </label>
+                        </td>
+                        <td>5 €</td>
+                    </tr>
 
-                        <tr>
-                            <td>
-                                <input
-                                    type="radio"
-                                    id="opcio5"
-                                    name="opcio"
-                                    value="Pack complet"
-                                >
-                            </td>
-                            <td>
-                                <label for="opcio5">
-                                    Pack complet d'accessoris
-                                </label>
-                            </td>
-                            <td>25 €</td>
-                        </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio3" name="opcio" value="MicroSD 32GB">
+                        </td>
+                        <td>
+                            <label for="opcio3">
+                                Targeta microSD de 32 GB
+                            </label>
+                        </td>
+                        <td>10 €</td>
+                    </tr>
 
-                    </table>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio4" name="opcio" value="MicroSD 64GB">
+                        </td>
+                        <td>
+                            <label for="opcio4">
+                                Targeta microSD de 64 GB
+                            </label>
+                        </td>
+                        <td>15 €</td>
+                    </tr>
 
-                    <h3>Mètode de contacte</h3>
+                    <tr>
+                        <td>
+                            <input type="radio" id="opcio5" name="opcio" value="Pack complet">
+                        </td>
+                        <td>
+                            <label for="opcio5">
+                                Pack complet d'accessoris
+                            </label>
+                        </td>
+                        <td>25 €</td>
+                    </tr>
 
-                    <p>
-                        Com prefereixes que et contactem?
-                    </p>
+                </table>
 
-                    <input
-                        type="radio"
-                        id="contacte_email"
-                        name="contacte"
-                        value="Email"
-                        required
-                    >
-                    <label for="contacte_email">
-                        Correu electrònic
-                    </label>
+                <h3>Mètode de contacte</h3>
 
-                    <br>
+                <p>
+                    Com prefereixes que et contactem?
+                </p>
 
-                    <input
-                        type="radio"
-                        id="contacte_telefon"
-                        name="contacte"
-                        value="Telefon"
-                    >
-                    <label for="contacte_telefon">
-                        Telèfon / Whatsapp
-                    </label>
+                <input type="radio" id="contacte_email" name="contacte" value="Email" required>
+                <label for="contacte_email">
+                    Correu electrònic
+                </label>
 
-                    <br><br>
+                <br>
 
-                    <input
-                        type="submit"
-                        value="Afegir al carret"
-                    >
+                <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
+                <label for="contacte_telefon">
+                    Telèfon / Whatsapp
+                </label>
 
-                </form>
+                <br><br>
 
-            </section>
+                <input type="submit" value="Afegir al carret">
+
+            </form>
+
+        </section>
 
         </article>
 
@@ -238,8 +200,11 @@
             </section>
 
         </aside>
-        <footer>
-            <p>© 2026 Tech & Variables. Tots els drets reservats.</p>
-        </footer>
-    </body>
+    </div>
+
+    <footer>
+        <p>© 2026 Tech & Variables. Tots els drets reservats.</p>
+    </footer>
+</body>
+
 </html>
