@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fitxa - Flipper Zero</title>
-    <meta name="description" content="">
+    <meta name="description" content="Fitxa del producte Flipper Zero amb informació detallada.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/estils.css">
@@ -22,7 +22,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img id="imatgeTitol" src="img/iconaTech.png">
+                <img id="imatgeTitol" alt="Logo" src="img/iconaTech.png">
                 <span id="titolPagina">Tech & Variables</span>
             </a>
         </div>
@@ -35,173 +35,193 @@
             </ul>
         </nav>
     </header>
-
-    <article id="fitxaProducte">
-
-        <figure>
-            <img id="imatgeProducte" src="img/flipper.png" alt="Flipper Zero">
-        </figure>
-
-        <section id="descripcioProdcte">
-            <h1>Flipper Zero</h1>
-            <p>Flipper Zero Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id ipsum maximus, volutpat
-                ipsum non, iaculis est. Phasellus eu dolor et metus feugiat condimentum quis in diam. Proin vel iaculis
-                risus. Praesent consectetur purus ac purus vestibulum, eu facilisis dolor bibendum. Integer dapibus
-                metus ac metus ullamcorper, vel consectetur eros vestibulum. Nam et dictum eros. Donec convallis
-                ullamcorper pharetra. Nam sodales convallis consequat. Nunc vel hendrerit ante. Donec quis pulvinar
-                nisi, in tincidunt nibh. Morbi lacinia tristique tellus, vitae vehicula orci tempus eget. Curabitur
-                congue neque pulvinar urna fringilla, eu tincidunt leo elementum. Proin ut nisi felis.</p>
-            <p>Conté sensors i emissors de radiofrequència, RFID, infrarojos, </p>
-        </section>
-
-    </article>
-
-    <div id="cos">
-        <section id="formulariCompra">
-
-            <p>Preu base: 200 €</p>
-
-            <form action="#" method="post">
-
-                <h3>Personalitza el teu Flipper Zero</h3>
-
-                <p>
-                    Selecciona una de les opcions disponibles:
-                </p>
-
-                <table>
-                    <tr>
-                        <th>Selecciona</th>
-                        <th>Opció del producte</th>
-                        <th>Cost addicional</th>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio0" name="opcio" value="Sense accessoris" required>
-                        </td>
-                        <td>
-                            <label for="opcio0">
-                                Sense accessoris
-                            </label>
-                        </td>
-                        <td>0 €</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio1" name="opcio" value="Funda protectora">
-                        </td>
-                        <td>
-                            <label for="opcio1">
-                                Funda protectora de silicona
-                            </label>
-                        </td>
-                        <td>8 €</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio2" name="opcio" value="Protector pantalla">
-                        </td>
-                        <td>
-                            <label for="opcio2">
-                                Protector de pantalla
-                            </label>
-                        </td>
-                        <td>5 €</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio3" name="opcio" value="MicroSD 32GB">
-                        </td>
-                        <td>
-                            <label for="opcio3">
-                                Targeta microSD de 32 GB
-                            </label>
-                        </td>
-                        <td>10 €</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio4" name="opcio" value="MicroSD 64GB">
-                        </td>
-                        <td>
-                            <label for="opcio4">
-                                Targeta microSD de 64 GB
-                            </label>
-                        </td>
-                        <td>15 €</td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="radio" id="opcio5" name="opcio" value="Pack complet">
-                        </td>
-                        <td>
-                            <label for="opcio5">
-                                Pack complet d'accessoris
-                            </label>
-                        </td>
-                        <td>25 €</td>
-                    </tr>
-
-                </table>
-
-                <h3>Mètode de contacte</h3>
-
-                <p>
-                    Com prefereixes que et contactem?
-                </p>
-
-                <input type="radio" id="contacte_email" name="contacte" value="Email" required>
-                <label for="contacte_email">
-                    Correu electrònic
-                </label>
-
-                <br>
-
-                <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
-                <label for="contacte_telefon">
-                    Telèfon / Whatsapp
-                </label>
-
-                <br><br>
-
-                <input type="submit" value="Afegir al carret">
-
-            </form>
-
-        </section>
+    <main>
+        <h1>Fitxa del producte</h1>
+        <article id="fitxaProducte">
+            
+            <figure>
+                <img id="imatgeProducte" src="img/flipper.png" alt="Flipper Zero">
+            </figure>
+            <div id="informacioProducte">
+                <h2>Flipper Zero - <span id="preuFitxa">200 €</span></h2>
+                <p>El <strong>Flipper Zero</strong> es un dispositivo portátil multifunción.</p>
+                <p>Es especialmente útil para <em>aprendizaje y experimentación</em>.
+                    ipsum non, iaculis est. Phasellus eu dolor et metus feugiat condimentum quis in diam. Proin vel
+                    iaculis
+                    risus. Praesent consectetur purus ac purus vestibulum, eu facilisis dolor bibendum. Integer dapibus
+                    metus ac metus ullamcorper, vel consectetur eros vestibulum. Nam et dictum eros. Donec convallis
+                    ullamcorper pharetra. Nam sodales convallis consequat. Nunc vel hendrerit ante. Donec quis pulvinar
+                    nisi, in tincidunt nibh. Morbi lacinia tristique tellus, vitae vehicula orci tempus eget. Curabitur
+                    congue neque pulvinar urna fringilla, eu tincidunt leo elementum. Proin ut nisi felis.</p>
+                <p>Conté sensors i emissors de radiofrequència, RFID, infrarojos, </p>
+                <p>Per a més informació, pots visitar la <a href="https://flipperzero.one/" target="_blank">web oficial
+                        del producte.</a></p>
+            </div>
 
         </article>
 
-        <aside>
+        <div id="cos">
+            <section id="formulariCompra">
 
-            <h3>Productes relacionats</h3>
+                <form action="#" method="post">
 
-            <section id="relacionats">
+                    <h2>Personalitza el teu Flipper Zero</h2>
 
-                <div class="relacio">
+                    <p>
+                        Selecciona una de les opcions disponibles:
+                    </p>
 
-                    <h4>Cable de càrrega</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Selecciona</th>
+                                <th>Opció del producte</th>
+                                <th>Cost addicional</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio0" name="opcio" value="Sense accessoris" required>
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio0">
+                                        Sense accessoris
+                                    </label>
+                                </td>
+                                <td class="preu">0 €</td>
+                            </tr>
 
-                    <figure>
-                        <img src="img/cable.jpg" class="imgRelacionat">
-                        <figcaption>
-                            Cable de càrrega, preparat pel dispositiu
-                        </figcaption>
-                    </figure>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio1" name="opcio" value="Funda protectora">
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio1">
+                                        Funda protectora de silicona
+                                    </label>
+                                </td>
+                                <td class="preu">8 €</td>
+                            </tr>
 
-                </div>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio2" name="opcio" value="Protector pantalla">
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio2">
+                                        Protector de pantalla
+                                    </label>
+                                </td>
+                                <td class="preu">5 €</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio3" name="opcio" value="MicroSD 32GB">
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio3">
+                                        Targeta microSD de 32 GB
+                                    </label>
+                                </td>
+                                <td class="preu">10 €</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio4" name="opcio" value="MicroSD 64GB">
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio4">
+                                        Targeta microSD de 64 GB
+                                    </label>
+                                </td>
+                                <td class="preu">15 €</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="radio" id="opcio5" name="opcio" value="Pack complet">
+                                </td>
+                                <td class="opcio">
+                                    <label for="opcio5">
+                                        Pack complet d'accessoris
+                                    </label>
+                                </td>
+                                <td class="preu">25 €</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Preus dels accessoris</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+
+                    <h2>Mètode de contacte</h2>
+
+                    <p>
+                        Com prefereixes que et contactem?
+                    </p>
+
+                    <input type="radio" id="contacte_email" name="contacte" value="Email" required>
+                    <label for="contacte_email">
+                        Correu electrònic
+                    </label>
+
+                    <br>
+
+                    <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
+                    <label for="contacte_telefon">
+                        Telèfon / Whatsapp
+                    </label>
+
+                    <br><br>
+
+                    <input type="submit" value="Afegir al carret">
+
+                </form>
 
             </section>
 
-        </aside>
-    </div>
+            <aside>
 
+                <h3>Productes relacionats</h3>
+
+                <section id="relacionats">
+
+                    <div class="relacio">
+                        <a href="fitxa.html">
+                            <h4>Cable de càrrega</h4>
+
+                            <figure>
+                                <img src="img/cable.jpg" class="imgRelacionat">
+                                <figcaption>
+                                    Cable de càrrega, preparat pel dispositiu
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="relacio">
+                        <a href="fitxa.html">
+                            <h4>Cable de càrrega2</h4>
+
+                            <figure>
+                                <img src="img/cable.jpg" class="imgRelacionat">
+                                <figcaption>
+                                    Cable de càrrega2, preparat pel dispositiu
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                </section>
+
+            </aside>
+        </div>
+    </main>
     <footer>
         <p>© 2026 Tech & Variables. Tots els drets reservats.</p>
     </footer>

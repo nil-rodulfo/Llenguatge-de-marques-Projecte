@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Catàleg de productes tecnològics i electrònics amb informació detallada">
     <title>Tech & Variables</title>
-
     <link rel="stylesheet" href="css/estils.css">
     <link rel="icon" href="img/iconaTech.png">
 
@@ -21,7 +20,6 @@
         <div class="logo">
             <a href="index.html">
                 <img id="imatgeTitol" src="img/iconaTech.png" alt="Logotip Tech & Variables">
-
                 <span id="titolPagina">Tech & Variables</span>
             </a>
         </div>
@@ -37,224 +35,284 @@
 
     <main>
         <section id="capcalera-cataleg">
-            <h2>El nostre catàleg de productes</h2>
+            <h1>El nostre catàleg de productes</h1>
             <p>Productes que t'ajudaran en tots i qualsevol projecte, sempre al millor preu.</p>
         </section>
 
         <section class="catalogo" aria-label="Productes disponibles">
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 1: Flipper Zero -->
+            <article class="producto">
                 <a href="fitxa.html">
                     <img src="img/flipper.png" alt="Flipper Zero">
+                    <h2 class="titol">
+                        Flipper Zero - <span class="preu">199,99 €</span>
+                    </h2>
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Flipper Zero - </span> <span class="preu">199,99 €</span></p>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Multieina portàtil, RFID, NFC, i GPIO</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
 
-                        <p><span class="caracteristiques">Multieina portàtil, RFID, NFC, i GPIO</span> - <span
-                                class="valoracio">4,8/5 ⭐</span></p>
-
-                        <p class="descripcio">
-                            Dispositiu multifuncional per a hackers. RFID, infrarojos, GPIO i tot el necessari.
-                        </p>
-                    </section>
+                    <p class="descripcio">
+                        Dispositiu multifuncional per a hackers. RFID, infrarojos, GPIO i tot el necessari.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 2: Arduino Uno -->
+            <article class="producto">
                 <a href="fitxa.html">
                     <img src="img/arduino.png" alt="Arduino Uno">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Arduino Uno - </span> <span class="preu">499,99 €</span></p>
+                    <h2 class="titol">
+                        Arduino Uno - <span class="preu">499,99 €</span>
+                    </h2>
 
-                        <p><span class="caracteristiques">Placa de desenvolupament, microcontrolador i entrades/sortides
-                                digitals</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Placa de desenvolupament, microcontrolador i entrades/sortides
+                            digitals</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
 
-                        <p class="descripcio">
-                            Placa electrònica programable ideal per crear projectes de robòtica, automatització i
-                            electrònica.
-                        </p>
-                    </section>
+                    <p class="descripcio">
+                        Placa electrònica programable ideal per crear projectes de robòtica, automatització i
+                        electrònica.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 3: Mòdul GPS -->
+            <article class="producto">
                 <a href="fitxa.html">
                     <img src="img/flipper.png" alt="Mòdul GPS">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Mòdul GPS - </span> <span class="preu">299,99 €</span></p>
+                    <h2 class="titol">
+                        Mòdul GPS - <span class="preu">299,99 €</span>
+                    </h2>
 
-                        <p><span class="caracteristiques">Geolocalització, navegació i posicionament per
-                                satèl·lit</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Geolocalització, navegació i posicionament per satèl·lit</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
 
-                        <p class="descripcio">
-                            Mòdul GPS per obtenir dades de localització i integrar sistemes de navegació en projectes
-                            electrònics.
-                        </p>
-                    </section>
+                    <p class="descripcio">
+                        Mòdul GPS per obtenir dades de localització i integrar sistemes de navegació en projectes
+                        electrònics. Característica destacada: Compatible con múltiples dispositivos.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 4: ESP32 DevKit -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/arduino.png" alt="ESP32 DevKit">
+                    <img src="img/esp32.jpg" alt="ESP32 DevKit">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">ESP32 DevKit - </span> <span class="preu">59,99 €</span></p>
 
-                        <p><span class="caracteristiques">Wi-Fi, Bluetooth i microcontrolador integrat</span> - <span
-                                class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        ESP32 DevKit - <span class="preu">59,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Placa de desenvolupament ideal per a projectes IoT, domòtica i sistemes electrònics
-                            connectats.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Wi-Fi, Bluetooth i microcontrolador integrat</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Placa de desenvolupament ideal per a projectes IoT, domòtica i sistemes electrònics connectats.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 5: Kit Robòtica Educativa -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/flipper.png" alt="Kit de robòtica educativa">
+                    <img src="img/kitrobotica.jpg" alt="Kit de robòtica educativa">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Kit Robòtica Educativa - </span> <span class="preu">29,99 €</span></p>
 
-                        <p><span class="caracteristiques">Peces de muntatge, motors i components electrònics</span> -
-                            <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Kit Robòtica Educativa - <span class="preu">29,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Kit educatiu per aprendre els conceptes bàsics de robòtica, programació i electrònica.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Peces de muntatge, motors i components electrònics</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Kit educatiu per aprendre els conceptes bàsics de robòtica, programació i electrònica.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 6: Kit de cablejat electrònic -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/arduino.png" alt="Kit de cablejat electrònic">
+                    <img src="img/kitcables.jpg" alt="Kit de cablejat electrònic">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Kit de cablejat electrònic - </span> <span class="preu">89,99 €</span>
-                        </p>
 
-                        <p><span class="caracteristiques">Cables, connectors i accessoris per a circuits
-                                electrònics</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Kit de cablejat electrònic - <span class="preu">89,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Kit de cablejat amb diferents components per connectar i muntar circuits electrònics.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Cables, connectors i accessoris per a circuits electrònics</span>
+                        -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Kit de cablejat amb diferents components per connectar i muntar circuits electrònics.
+                        Característica destacada: Compatible con múltiples dispositivos.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 7: Raspberry Pi 5 -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/flipper.png" alt="Raspberry Pi 5">
+                    <img src="img/pi5.jpg" alt="Raspberry Pi 5">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Raspberry Pi 5 - </span> <span class="preu">199,99 €</span></p>
 
-                        <p><span class="caracteristiques">Miniordinador, processador potent i connectivitat
-                                múltiple</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Raspberry Pi 5 - <span class="preu">199,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Ordinador de mida reduïda ideal per a projectes de programació, servidors i automatització.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Miniordinador, processador potent i connectivitat múltiple</span>
+                        -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Ordinador de mida reduïda ideal per a projectes de programació, servidors i automatització.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 8: Teclat RGB -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/arduino.png" alt="Teclat RGB">
+                    <img src="img/teclatrgb.jpg" alt="Teclat RGB">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Teclat RGB - </span> <span class="preu">49,99 €</span></p>
 
-                        <p><span class="caracteristiques">Il·luminació RGB, tecles ergonòmiques i connexió USB</span> -
-                            <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Teclat RGB - <span class="preu">49,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Teclat amb il·luminació RGB ideal per escriure, jugar i personalitzar l'escriptori.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Il·luminació RGB, tecles ergonòmiques i connexió USB</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Teclat amb il·luminació RGB ideal per escriure, jugar i personalitzar l'escriptori.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 9: SSD 1TB -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/flipper.png" alt="SSD d'1 TB">
+                    <img src="img/ssd1tb.jpg" alt="SSD d'1 TB">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">SSD 1TB - </span> <span class="preu">129,99 €</span></p>
 
-                        <p><span class="caracteristiques">Emmagatzematge d'1 TB i alta velocitat de transferència</span>
-                            - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        SSD 1TB - <span class="preu">129,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Unitat d'emmagatzematge SSD ràpida i eficient per guardar fitxers, programes i documents.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Emmagatzematge d'1 TB i alta velocitat de transferència</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Unitat d'emmagatzematge SSD ràpida i eficient per guardar fitxers, programes i documents.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 10: Monitor 24" -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/arduino.png" alt="Monitor de 24 polzades">
+                    <img src="img/monitor.jpg" alt="Monitor de 24 polzades">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Monitor 24" - </span> <span class="preu">349,99 €</span></p>
 
-                        <p><span class="caracteristiques">Pantalla de 24 polzades i alta qualitat d'imatge</span> -
-                            <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Monitor 24" - <span class="preu">349,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Monitor ideal per treballar, estudiar, jugar i gaudir de continguts multimèdia.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Pantalla de 24 polzades i alta qualitat d'imatge</span> -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Monitor ideal per treballar, estudiar, jugar i gaudir de continguts multimèdia.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 11: Adaptador USB-C -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/flipper.png" alt="Adaptador USB-C">
+                    <img src="img/adaptadorusbc.jpg" alt="Adaptador USB-C">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Adaptador USB-C - </span> <span class="preu">119,99 €</span></p>
 
-                        <p><span class="caracteristiques">Connexió USB-C i compatibilitat amb diferents
-                                dispositius</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Adaptador USB-C - <span class="preu">119,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Adaptador per ampliar les opcions de connexió i connectar perifèrics a dispositius
-                            compatibles.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Connexió USB-C i compatibilitat amb diferents dispositius</span>
+                        -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Adaptador per ampliar les opcions de connexió i connectar perifèrics a dispositius compatibles.
+                    </p>
                 </a>
             </article>
 
-            <article class="producto" categoria="Electronica">
+            <!-- Producte 12: Bateria portàtil -->
+            <article class="producto">
                 <a href="fitxa.html">
-                    <img src="img/arduino.png" alt="Bateria portàtil">
+                    <img src="img/bateriaportatil.jpg" alt="Bateria portàtil">
 
-                    <section class="infoProducte">
-                        <p><span class="titol">Bateria portàtil - </span> <span class="preu">79,99 €</span></p>
 
-                        <p><span class="caracteristiques">Alimentació portàtil i càrrega de dispositius
-                                electrònics</span> - <span class="valoracio">4,8/5 ⭐</span></p>
+                    <h2 class="titol">
+                        Bateria portàtil - <span class="preu">79,99 €</span>
+                    </h2>
 
-                        <p class="descripcio">
-                            Bateria externa ideal per carregar dispositius electrònics quan no tens accés a una presa de
-                            corrent.
-                        </p>
-                    </section>
+                    <p>
+                        <strong class="categoria">Electronica</strong> -
+                        <span class="caracteristiques">Alimentació portàtil i càrrega de dispositius electrònics</span>
+                        -
+                        <span class="valoracio">4,8/5 ⭐</span>
+                    </p>
+
+                    <p class="descripcio">
+                        Bateria externa ideal per carregar dispositius electrònics quan no tens accés a una presa de
+                        corrent.
+                    </p>
                 </a>
             </article>
-
 
         </section>
+
+        <p>Visita també el nostre soci <a href="https://www.pccomponentes.com/" target="_blank">PcComponentes</a></p>
 
     </main>
 
