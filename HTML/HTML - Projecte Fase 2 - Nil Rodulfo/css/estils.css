@@ -16,15 +16,16 @@
     box-sizing: border-box;
 }
 
+/* Color de fons de la pàgina */
 html {
     background-color: var(--color-fons);
 }
 
 body {
-    margin: 0;
-    padding: 0 4%;
-    color: var(--color-primari);
-    font-family: 'DM Sans', sans-serif;
+    margin: 0; /* Treu marges que puguin vindre per defecte */
+    padding: 0 4%; /* Posa espai a banda i banda de la pàgina */
+    color: var(--color-primari); /* Color per defecte del text */
+    font-family: var(--font-text), sans-serif; /* Tipus de lletra per defecte. La que obtinc, d'altra manera sans-serif */
     line-height: 1.7;
 }
 
@@ -35,29 +36,29 @@ footer {
 
 a {
     color: var(--color-secundari);
-    font-family: var(--font-text), sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
+/* Tipus de lletra per defecte dels paràgrafs */
 p {
     font-family: var(--font-text), sans-serif;
 }
 
 /* MENÚ DE NAVEGACIÓ */
 header {
-    position: sticky;
+    position: sticky; /* El menú sempre és visible */
     top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
+    z-index: 1000; /* Es dibuixa per sobre de tot, de manera que no quedi amagat per altres elements */
+    display: flex; 
+    justify-content: space-between; /* Els elements del menú es separen el màxim possible */
     align-items: center;
     min-height: 65px;
     padding: 12px 0;
     background-color: var(--color-fons);
     border-bottom: 2px solid #cccccc;
 }
-
+/* Únicament s'aplicaran a les unordered lists dins del header */
 header nav ul {
     display: flex;
     gap: 25px;
@@ -67,11 +68,11 @@ header nav ul {
 
 #titolPagina {
     color: var(--color-primari);
-    font-family: var(--font-text), sans-serif;
     font-size: 1.4rem;
     font-weight: 650;
 }
 
+/* Imatges que formin part del logo */
 .logo img {
     width: 42px;
     height: 42px;
@@ -79,6 +80,7 @@ header nav ul {
     vertical-align: middle;
 }
 
+/* L'imatge i el títol de la pàgina (que es troben en un a), se centraran verticalment (respecte la caixa de naevgació) */
 .logo a * {
     display: inline-block;
     max-height: 3rem;
@@ -91,20 +93,19 @@ header a {
     transition: color 0.25s;
 }
 
+/* La pàgina en la que em trobi es mostrarà (a navegació) amb un color diferent */
 header a#actual {
     color: var(--secundari-fosc);
-    transform: scale(1.5);
 }
 
+/* Si passo per sobre del menú de navegació, cambiarà de color */
 header a:hover {
     color: var(--color-secundari);
-    transform: scale(1.5);
 }
 
 /* TÍTOLS GENERALS */
 h1, h2, h3 {
     color: var(--color-primari);
-    font-family: var(--font-text), sans-serif;
     line-height: 1.2;
 }
 
@@ -120,16 +121,16 @@ h2 {
 
 /* CATÀLEG */
 .catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin: 2.5rem auto;
+    display: grid; /* Fa que els productes es mostrin en forma de graella */
+    grid-template-columns: repeat(3, 1fr); /* 3 elements per fila, amb la mateixa mida */
+    gap: 22px; /* Espai entre productes */
+    margin: 2.5rem auto; 
 }
 
 /* PRODUCTES */
 .producto {
-    display: block;
-    z-index: 1;
+    display: block; /* Cada producte ocupa el seu propi bloc */
+    z-index: 1; /* Es dibuixa per sota d'altres elements amb índex major, com el menú de navegació */
     padding: 15px;
     background-color: var(--color-fons);
     border-radius: 5px;
@@ -137,25 +138,27 @@ h2 {
     font-size: 1.1rem;
     line-height: 1;
     text-align: justify;
-    transition: transform 0.25s;
+
+    transition: transform 0.25s; /* Especifica quan tarda a fer-se la transformació */
 }
 
 .producto a {
     text-decoration: none;
 }
 
+/* Quan es passi per sobre d'element, s'agrandrà lleugrament */
 .producto:hover {
     transform: scale(1.05);
 }
 
 /* IMATGES DELS PRODUCTES */
 .producto img {
-    width: 100%;
-    height: 190px;
-    object-fit: contain;
+    width: 100%; /* Ocupa tot el possible */
+    height: 190px; /* Alçada fixa, perque totes les imatges tinguin la mateixa mida */
+    object-fit: contain; /* Ajusta l'imatge, perque no es deformi */
     background-color: var(--color-gris);
-    border-radius: 0.25rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem; /* Arrodoneix les cantonades de la imatge */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Li posa una ombra a l'imatge, perque destaqui lleugerament */
 }
 
 /* INFORMACIÓ DELS PRODUCTES */
@@ -166,6 +169,7 @@ h2 {
     font-weight: bold;
 }
 
+/* Tenen molt atributs comuns, així que els agrupo per no repetir codi */
 .preu,
 .categoria,
 #preuFitxa,
@@ -201,7 +205,6 @@ h2 {
 #cos {
     display: grid;
     grid-template-columns: 50% 1fr;
-    font-family: var(--font-text), sans-serif;
     text-align: justify;
 }
 
@@ -280,7 +283,6 @@ form {
     padding: 1.5rem;
     background-color: lightgrey;
     border-radius: 0.7rem;
-    font-family: var(--font-text), sans-serif;
 }
 
 form > label {
@@ -295,7 +297,6 @@ form select {
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    font-family: var(--font-text), sans-serif;
 }
 
 form input[type="text"],
@@ -320,7 +321,6 @@ form textarea:focus {
 
 form textarea {
     max-width: 80vw;
-    font-family: var(--font-text), sans-serif;
     font-size: 1rem;
 }
 
@@ -335,7 +335,6 @@ form input[type="reset"] {
     margin: 1rem 5px;
     padding: 10px 20px;
     background-color: var(--secundari-clar);
-    font-family: var(--font-text), sans-serif;
     font-size: 1rem;
 }
 

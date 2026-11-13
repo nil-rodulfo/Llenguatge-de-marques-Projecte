@@ -1,96 +1,96 @@
 <!DOCTYPE html>
 <html lang="ca">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contacte</title>
-    <meta name="description" content="Contacta amb Tech & Variables per qualsevol consulta">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/estils.css">
-    <link rel="icon" href="img/iconaTech.png">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contacte</title>
+        <meta name="description" content="Contacta amb Tech & Variables per qualsevol consulta">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estils.css">
+        <link rel="icon" href="img/iconaTech.png">
 
-    <!-- Carrego les fonts que utilitzarà la pàgina -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-</head>
+        <!-- Carrego les fonts que utilitzarà la pàgina -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img id="imatgeTitol" alt="Logo" src="img/iconaTech.png"> <span id="titolPagina">Tech & Variables</span>
-            </a>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Catàleg</a></li>
-                <li><a href="fitxa.html">Fitxa</a></li>
-                <li><a href="contacte.html" id="actual">Contacte</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Podem ajudar-te?</h1>
-        <article id="contacte">
-            <div>
-                <h2>Contacta amb nosaltres</h2>
-                <form action="#" method="POST">
-                    <label for="name">Nom i cognoms</label><br>
-                    <input type="text" id="name" name="name" placeholder="María García" required><br>
-
-                    <label for="email">Correu electrònic</label><br>
-                    <input type="email" id="email" name="email" placeholder="maria.garcia@gmail.com" required><br>
-
-                    <label for="phone">Telèfon de contacte</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="123 456 789" required><br>
-
-                    <label for="motiuConsulta">Motiu de consulta</label><br>
-
-                    <select id="motiuConsulta" name="motiuConsulta" required>
-                        <option value="" selected disabled>Selecciona un motiu</option>
-                        <option value="papers">Papers</option>
-                        <option value="interna">Gestió interna</option>
-                        <option value="externa">Gestió externa</option>
-                    </select><br>
-
-                    <fieldset>
-                        <legend>Com prefereixes que et contactem?</legend>
-
-                        <input type="radio" id="contacte_email" name="contacte" value="Email" required>
-                        <label for="contacte_email">Correu electrònic</label>
-
-                        <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
-                        <label for="contacte_telefon">Telèfon</label>
-                    </fieldset>
-
-                    <label for="missatge">Missatge</label><br>
-                    <textarea id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge..." rows="4"
-                        cols="50"></textarea><br>
-
-                    <input type="checkbox" id="politicaPrivacitat" name="politicaPrivacitat" required>
-                    <label for="politicaPrivacitat">Accepto la política de privacitat</label><br>
-
-                    <div id="botons-form">
-                        <input type="submit" value="Enviar missatge">
-                        <input type="reset" value="Netejar">
-                    </div>
-                </form>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img id="imatgeTitol" alt="Logo" src="img/iconaTech.png"> <span id="titolPagina">Tech & Variables</span>
+                </a>
             </div>
-            <div>
-                <h2>O pots trobar-nos a...</h2>
-                <iframe id="mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d666.0275513514805!2d2.1866419052919452!3d41.45305210130204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sITB%20-%20Institut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1794221191797!5m2!1sca!2ses"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <p>© 2026 Tech & Variables. Tots els drets reservats.</p>
-    </footer>
-</body>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Catàleg</a></li>
+                    <li><a href="fitxa.html">Fitxa</a></li>
+                    <li><a href="contacte.html" id="actual">Contacte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Podem ajudar-te?</h1>
+            <article id="contacte">
+                <div>
+                    <h2>Contacta amb nosaltres</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Nom i cognoms</label><br>
+                        <input type="text" id="name" name="name" placeholder="María García" required><br>
+
+                        <label for="email">Correu electrònic</label><br>
+                        <input type="email" id="email" name="email" placeholder="maria.garcia@gmail.com" required><br>
+
+                        <label for="phone">Telèfon de contacte</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123 456 789" required><br>
+
+                        <label for="motiuConsulta">Motiu de consulta</label><br>
+
+                        <select id="motiuConsulta" name="motiuConsulta" required>
+                            <option value="" selected disabled>Selecciona un motiu</option>
+                            <option value="papers">Papers</option>
+                            <option value="interna">Gestió interna</option>
+                            <option value="externa">Gestió externa</option>
+                        </select><br>
+
+                        <fieldset>
+                            <legend>Com prefereixes que et contactem?</legend>
+
+                            <input type="radio" id="contacte_email" name="contacte" value="Email" required>
+                            <label for="contacte_email">Correu electrònic</label>
+
+                            <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
+                            <label for="contacte_telefon">Telèfon</label>
+                        </fieldset>
+
+                        <label for="missatge">Missatge</label><br>
+                        <textarea id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge..." rows="4"
+                            cols="50"></textarea><br>
+
+                        <input type="checkbox" id="politicaPrivacitat" name="politicaPrivacitat" required>
+                        <label for="politicaPrivacitat">Accepto la política de privacitat</label><br>
+
+                        <div id="botons-form">
+                            <input type="submit" value="Enviar missatge">
+                            <input type="reset" value="Netejar">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <h2>O pots trobar-nos a...</h2>
+                    <iframe id="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d666.0275513514805!2d2.1866419052919452!3d41.45305210130204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sITB%20-%20Institut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1sca!2ses!4v1794221191797!5m2!1sca!2ses"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>© 2026 Tech & Variables. Tots els drets reservats.</p>
+        </footer>
+    </body>
 
 </html>
