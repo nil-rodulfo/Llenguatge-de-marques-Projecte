@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,57 +7,237 @@
         <title>Fitxa Producte</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="css/estils.css">
         <link rel="icon" href="img/iconaTech.png">
+
+        <!-- Carrego les fonts que utilitzarà la pàgina -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
+
     <body>
+
         <header>
             <div class="logo">
                 <a href="index.html">
-                    <img id="imatgeTitol" src="img/iconaTech.png"> <span id="titolPagina">Tech & Variables</span>
+                    <img id="imatgeTitol" src="img/iconaTech.png">
+                    <span id="titolPagina">Tech & Variables</span>
                 </a>
             </div>
 
             <nav>
                 <ul>
                     <li><a href="index.html">Catàleg</a></li>
-                    <li><a href="fitxa.html">Fitxa</a></li>
+                    <li><a href="fitxa.html" id="actual">Fitxa</a></li>
                     <li><a href="contacte.html">Contacte</a></li>
                 </ul>
             </nav>
         </header>
+
         <article id="fitxaProducte">
+
             <figure>
                 <img id="imatgeProducte" src="img/placeholder.png">
-                <figcaption>Flipper Zero, eina versàtil per a hacking.</figcaption>
+                <figcaption>
+                    Flipper Zero, eina versàtil per a hacking.
+                </figcaption>
             </figure>
+
             <section id="descripcioProdcte">
                 <h1>Flipper Zero</h1>
                 <p>Bla bla bla</p>
             </section>
+
             <section id="formulariCompra">
-                <p>200 €</p>
-                <form>
-                    <label for="metodeContacte">Com prefereixes que et contactem?</label><br>
-                    <input type="radio" id="contacte_email" name="contacte" value="Email"/>
-                    <label for="contacte_email">Correu electrònic</label>
-                    <input type="radio" id="contacte_telefon" name="contacte" value="Telefon"/>
-                    <label for="contacte_email">Telefon / Whatsapp</label>
-                    <input type="submit" value="Afegir al carret">
+
+                <p>Preu base: 200 €</p>
+
+                <form action="#" method="post">
+
+                    <h3>Personalitza el teu Flipper Zero</h3>
+
+                    <p>
+                        Selecciona una de les opcions disponibles:
+                    </p>
+
+                    <table>
+                        <tr>
+                            <th>Selecciona</th>
+                            <th>Opció del producte</th>
+                            <th>Cost addicional</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio0"
+                                    name="opcio"
+                                    value="Sense accessoris"
+                                    required
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio0">
+                                    Sense accessoris
+                                </label>
+                            </td>
+                            <td>0 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio1"
+                                    name="opcio"
+                                    value="Funda protectora"
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio1">
+                                    Funda protectora de silicona
+                                </label>
+                            </td>
+                            <td>8 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio2"
+                                    name="opcio"
+                                    value="Protector pantalla"
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio2">
+                                    Protector de pantalla
+                                </label>
+                            </td>
+                            <td>5 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio3"
+                                    name="opcio"
+                                    value="MicroSD 32GB"
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio3">
+                                    Targeta microSD de 32 GB
+                                </label>
+                            </td>
+                            <td>10 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio4"
+                                    name="opcio"
+                                    value="MicroSD 64GB"
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio4">
+                                    Targeta microSD de 64 GB
+                                </label>
+                            </td>
+                            <td>15 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input
+                                    type="radio"
+                                    id="opcio5"
+                                    name="opcio"
+                                    value="Pack complet"
+                                >
+                            </td>
+                            <td>
+                                <label for="opcio5">
+                                    Pack complet d'accessoris
+                                </label>
+                            </td>
+                            <td>25 €</td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Mètode de contacte</h3>
+
+                    <p>
+                        Com prefereixes que et contactem?
+                    </p>
+
+                    <input
+                        type="radio"
+                        id="contacte_email"
+                        name="contacte"
+                        value="Email"
+                        required
+                    >
+                    <label for="contacte_email">
+                        Correu electrònic
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="contacte_telefon"
+                        name="contacte"
+                        value="Telefon"
+                    >
+                    <label for="contacte_telefon">
+                        Telèfon / Whatsapp
+                    </label>
+
+                    <br><br>
+
+                    <input
+                        type="submit"
+                        value="Afegir al carret"
+                    >
+
                 </form>
+
             </section>
+
         </article>
+
         <aside>
+
             <h3>Productes relacionats</h3>
+
             <section id="relacionats">
+
                 <div class="relacio">
+
                     <h4>Cable de càrrega</h4>
+
                     <figure>
                         <img src="img/cable.jpg" class="imgRelacionat">
-                        <figcaption>Cable de càrrega, perparat pel dispositiu</figcaption>
+                        <figcaption>
+                            Cable de càrrega, preparat pel dispositiu
+                        </figcaption>
                     </figure>
+
                 </div>
+
             </section>
+
         </aside>
+
     </body>
 </html>

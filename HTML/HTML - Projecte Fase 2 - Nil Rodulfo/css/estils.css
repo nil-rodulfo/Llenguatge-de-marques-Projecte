@@ -1,42 +1,78 @@
-/* Contingut del menú de navegació */
-header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
-  max-height: 3rem;
+
+/* PALETA DE COLORS */
+:root {
+    --color-primari: #202020;
+    --color-secundari: #E76F35;
+    --color-terciari: #777777;
+    --color-fons: #FFFFFF;
+    --color-gris: #F3F3F3;
+    --font-text: Space Grotesk;
+}
+
+/* CONFIGURACIÓ GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-terciari);
+}
+
+html {
+    background-color: var(--color-fons);
 }
 
 body {
-  padding-left: 4%;
-  padding-right: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0;
+    color: var(--color-primari);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+/* CONTINGUT DEL MENÚ DE NAVEGACIÓ */
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-fons);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    min-height: 65px;
+    border-bottom: 2px solid #cccccc;
+    z-index: 1000;
 }
 
 header nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  gap: 16px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    padding: 0;
 }
 
 #titolPagina {
-    color:black;
-    font-weight: bold;
-    font-size: 1.5rem;
+    color: var(--color-primari);
+    font-family: var(--font-text), sans-serif;
+    font-weight: 650;
+    font-size: 1.4rem;
 }
-/* Fer desaparèixer el títol si la pantalla es fa molt petitat, per deixar espai */
-@media screen and (max-width: 540px){
+
+/* Fer desaparèixer el títol si la pantalla es fa molt petita */
+@media screen and (max-width: 540px) {
     #titolPagina {
         display: none;
     }
 }
 
 .logo img {
-    height: fit-content;
-    object-fit: cover;
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
     vertical-align: middle;
 }
 
@@ -44,148 +80,221 @@ header nav ul {
     display: inline-block;
     max-height: 3rem;
     vertical-align: middle;
-}   
+}
 
 header a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
-    font-size: 1.1rem;
+    color: var(--color-primari);
+    font-size: 1rem;
+    transition: color 0.25s;
+}
+
+header a#actual {
+    color: #b85b2d;
+    transform: scale(1.5);
 }
 
 header a:hover {
-    color: grey;
-    font-size: 1.2rem;
+    color: var(--color-secundari);
+    transform: scale(1.5);
 }
 
-/* Cos de fitxa */
+/* TÍTOLS GENERALS */
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--color-primari);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+/* COS DE CATÀLEG */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 2.5rem auto;
+}
+
+/* CADA PRODUCTE DEL CATÀLEG */
+
+.producto {
+    display: block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--color-primari);
+    transition: transform 0.25s;
+
+    /* El z-index m'assegura que el producte, sigui quina sigui la seva alteració, 
+    es mostri per sota del menú de navegació, ja que té un z-index inferior al seu.
+    D'altra manera, el producte pot tapar el menú */
+    z-index: 1;
+
+    font-size: 1.1rem;
+    line-height: 1;
+    text-align: justify;
+}
+.producto a {
+    text-decoration: none;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* IMATGE DEL PRODUCTE */
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain; 
+    background-color: var(--color-gris);
+    border-radius: 0.25rem;
+
+    /* Petita ombra, quasi transparent, per resaltar la imatge */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* NOM DEL PRODUCTE */
+.producto .titol {
+    color: var(--color-primari);
+    margin: 15px 0 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* PREU DEL PRODUCTE */
+.producto .preu {
+    margin: 5px 0;
+    color: var(--color-secundari);
+    font-weight: bold;
+}
+
+.producto .caracteristiques {
+    margin: 5px 0;
+    color: var(--color-terciari);
+    font-size: 0.9rem;
+}
+
+.producto .valoracio {
+    margin: 5px 0;
+    color: var(--color-secundari);
+    font-size: 0.9rem;
+}
+
+.producto .descripcio {
+    margin: 5px 0;
+    color: var(--color-terciari);
+    font-size: 1rem;
+}
+
+/* COS DE FITXA */
 #fitxaProducte {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 #fitxaProducte > * {
-    max-width: minmax(540px, 40%);
+    max-width: min(540px, 45%);
 }
 
 #imatgeProducte {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: auto;
 }
 
-/* Formulari de contacte */
+/* FORMULARI DE CONTACTE */
 #contacte {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
-/* Contenidor principal del formulari */
-form {
-  max-width: 450px;
-  margin: 40px auto;
-  padding: 24px;
-  background: #f9fafb;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: system-ui, sans-serif;
+
+/* CONTENIDOR PRINCIPAL DEL FORMULARI */
+form {}
+form > label {}
+form input[type="text"] {}
+form input[type="email"] {}
+form input[type="tel"] {}
+form select {}
+form textarea {}
+form ::placeholder {}
+form input[type="text"]:focus {}
+form input[type="email"]:focus {}
+form input[type="tel"]:focus {}
+form select:focus {}
+form textarea:focus {}
+form input[type="radio"] {}
+form input[type="checkbox"] {}
+input[type="radio"] + label {}
+input[type="checkbox"] + label {}
+form input[type="submit"] {}
+form input[type="reset"] {}
+form input[type="submit"]:hover {}
+form input[type="reset"]:hover {}
+
+
+/* DISSENY ADAPTABLE PER A TAULETES */
+@media screen and (max-width: 1000px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* Etiquetes principals */
-form > label {
-  display: inline-block;
-  margin-bottom: 6px;
-  margin-top: 12px;
-  font-weight: 600;
-  color: #374151;
-  font-size: 0.9rem;
+/* DISSENY ADAPTABLE PER A TAULETES PETITES */
+@media screen and (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #fitxaProducte > * {
+        max-width: 100%;
+    }
 }
 
-/* Camps de text, correu, telèfon, select i missatge */
-form input[type="text"],
-form input[type="email"],
-form select {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 4px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  font-size: 1rem;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  background-color: #ffffff;
+/* DISSENY ADAPTABLE PER A MÒBILS */
+@media screen and (max-width: 480px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        gap: 14px;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    #contacte {
+        grid-template-columns: 1fr;
+    }
+
+    #fitxaProducte {
+        flex-direction: column;
+    }
+
+    #fitxaProducte > * {
+        max-width: 100%;
+    }
 }
-
-/* Enfosquir el text del placeholder */
-form ::placeholder {
-  color: #9ca3af;
-}
-
-/* Efecte focus per als camps de selecció i text */
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form select:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-/* Estils específics per als Radio i Checkbox */
-form input[type="radio"],
-form input[type="checkbox"] {
-  margin-right: 6px;
-  accent-color: #2563eb; /* Color blau per als controls natius */
-  cursor: pointer;
-}
-
-/* Etiquetes al costat dels ràdios i checkbox */
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-  font-weight: normal;
-  color: #4b5563;
-  font-size: 0.95rem;
-  margin-right: 16px;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 8px;
-}
-
-/* Estils per als botons inferiors (Enviar i Netejar) */
-form input[type="submit"],
-form input[type="reset"] {
-  width: 48%;
-  padding: 12px;
-  margin-top: 16px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  display: inline-block;
-}
-
-/* Botó Enviar (Primari) */
-form input[type="submit"] {
-  background-color: #2563eb;
-  color: white;
-  margin-right: 4%;
-}
-
-form input[type="submit"]:hover {
-  background-color: #1d4ed8;
-}
-
-/* Botó Netejar (Secundari) */
-form input[type="reset"] {
-  background-color: #e5e7eb;
-  color: #374151;
-}
-
-form input[type="reset"]:hover {
-  background-color: #d1d5db;
-}
-
-
