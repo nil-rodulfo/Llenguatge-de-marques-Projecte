@@ -2,7 +2,9 @@
 /* PALETA DE COLORS */
 :root {
     --color-primari: #202020;
+    --secundari-clar: #F9A66D;
     --color-secundari: #E76F35;
+    --secundari-fosc: #B85B2D;
     --color-terciari: #777777;
     --color-fons: #FFFFFF;
     --color-gris: #F3F3F3;
@@ -91,7 +93,7 @@ header a {
 }
 
 header a#actual {
-    color: #b85b2d;
+    color: var(--secundari-fosc);
     transform: scale(1.5);
 }
 
@@ -222,31 +224,94 @@ h2 {
 #contacte {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 4rem;
+    align-items: middle;
 }
 
 /* CONTENIDOR PRINCIPAL DEL FORMULARI */
-form {}
-form > label {}
-form input[type="text"] {}
-form input[type="email"] {}
-form input[type="tel"] {}
-form select {}
-form textarea {}
-form ::placeholder {}
-form input[type="text"]:focus {}
-form input[type="email"]:focus {}
-form input[type="tel"]:focus {}
-form select:focus {}
-form textarea:focus {}
-form input[type="radio"] {}
-form input[type="checkbox"] {}
-input[type="radio"] + label {}
-input[type="checkbox"] + label {}
-form input[type="submit"] {}
-form input[type="reset"] {}
-form input[type="submit"]:hover {}
-form input[type="reset"]:hover {}
+form {
+  background-color: lightgrey;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  font-family: var(--font-text), sans-serif;
+  max-width: 100%;
+}
+
+form > label {
+  color: var(--color-primari);
+  font-weight: bold;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    font-family: var(--font-text), sans-serif;
+}
+
+
+
+form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    font-family: var(--font-text), sans-serif;
+}
+
+form select {
+  padding:5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: var(--font-text), sans-serif;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, 
+form select:focus, form textarea:focus {
+    border-color: var(--color-secundari);
+    box-shadow: 0 0 4px var(--secundari-fosc);
+}
+
+form textarea {
+  max-width: 80vw;
+  font-family: var(--font-text), sans-serif;
+  font-size: 1rem;
+
+}
+
+form input[type="radio"]:checked {
+  accent-color: var(--secundari-clar);
+}
+form input[type="checkbox"]:checked {
+  accent-color: var(--secundari-clar);
+}
+
+form input[type="submit"], form input[type="reset"] {
+    display: inline-block;
+    margin: 1rem 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: var(--font-text), sans-serif;
+    background-color: var(--secundari-clar);
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+  background-color: var(--color-secundari);
+}
+
+form input[type="submit"]:active, form input[type="reset"]:active {
+  background-color: var(--secundari-fosc);
+}
+
+#mapa {
+    max-width: 100vw;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
 
 
 /* DISSENY ADAPTABLE PER A TAULETES */
