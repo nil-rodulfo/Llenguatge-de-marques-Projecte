@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicis JavaScript</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+        .caixa { width: 100px; height: 100px; background-color: lightgray; margin-top: 10px; transition: 0.3s; }
+        .destacat { border: 4px solid gold; box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+        .completat { text-decoration: line-through; color: gray; }
+    </style>
+    <!-- Carreguem el JS amb 'defer' perquè el DOM estigui llest abans d'executar -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Taller d'Exercicis de JavaScript</h1>
+    <hr>
+
+    <!-- Secció 1: Mode fosc -->
+    <section>
+        <h2>Exercici 1: Mode Fosc / Clar</h2>
+        <button id="btn-tema">Canviar Tema</button>
+    </section>
+
+    <!-- Secció 2: Interruptor d'estils -->
+    <section>
+        <h2>Exercici 2: Toggle de Caixa</h2>
+        <button id="btn-caixa">Activar/Desactivar Estil</button>
+        <div id="la-caixa" class="caixa"></div>
+    </section>
+
+    <!-- Secció 3: Comptador -->
+    <section>
+        <h2>Exercici 3: Comptador Interactiu</h2>
+        <button id="btn-restar">-</button>
+        <span id="valor-comptador" style="font-size: 1.5em; margin: 0 10px;">0</span>
+        <button id="btn-sumar">+</button>
+    </section>
+
+    <!-- Secció 4: Llista de tasques -->
+    <section>
+        <h2>Exercici 4: Llista Dinàmica</h2>
+        <input type="text" id="input-tasca" placeholder="Nova tasca...">
+        <button id="btn-afegir">Afegir</button>
+        <ul id="llista-tasques"></ul>
+    </section>
+
+    <!-- Secció 5: Consola -->
+    <section>
+        <h2>Exercici 5: Comprobador de Dades (console & alerts)</h2>
+        <button id="btn-consola">Executar consola</button>
+    </section>
+</body>
+</html>
