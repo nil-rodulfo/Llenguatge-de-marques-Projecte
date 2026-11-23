@@ -9,11 +9,29 @@
     --color-fons: #FFFFFF;
     --color-gris: #F3F3F3;
     --font-text: "Space Grotesk";
+
+/*  
+    --color-primari: #F3F3F3;
+    --secundari-clar: #FFB783;
+    --color-secundari: #F18A50;
+    --secundari-fosc: #D66B38;
+    --color-terciari: #A0A0A0;
+    --color-fons: #171717;
+    --color-gris: #242424;
+*/
 }
 
 /* CONFIGURACIÓ GENERAL */
 * {
     box-sizing: border-box;
+}
+
+.dark-mode {
+    color: #F3F3F3;
+    background-color: #171717;
+}
+.dark-mode header {
+    background-color: #171717;
 }
 
 /* Color de fons de la pàgina */
@@ -55,7 +73,6 @@ header {
     align-items: center;
     min-height: 65px;
     padding: 12px 0;
-    background-color: var(--color-fons);
     border-bottom: 2px solid #cccccc;
 }
 /* Únicament s'aplicaran a les unordered lists dins del header */
@@ -67,7 +84,6 @@ header nav ul {
 }
 
 #titolPagina {
-    color: var(--color-primari);
     font-size: 1.4rem;
     font-weight: 650;
 }
@@ -88,7 +104,6 @@ header nav ul {
 }
 
 header a {
-    color: var(--color-primari);
     font-size: 1rem;
     transition: color 0.25s;
 }
@@ -105,7 +120,6 @@ header a:hover {
 
 /* TÍTOLS GENERALS */
 h1, h2, h3 {
-    color: var(--color-primari);
     line-height: 1.2;
 }
 
@@ -132,9 +146,7 @@ h2 {
     display: block; /* Cada producte ocupa el seu propi bloc */
     z-index: 1; /* Es dibuixa per sota d'altres elements amb índex major, com el menú de navegació */
     padding: 15px;
-    background-color: var(--color-fons);
     border-radius: 5px;
-    color: var(--color-primari);
     font-size: 1.1rem;
     line-height: 1;
     text-align: justify;
@@ -164,7 +176,6 @@ h2 {
 /* INFORMACIÓ DELS PRODUCTES */
 .producto .titol {
     margin: 15px 0 8px;
-    color: var(--color-primari);
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -252,7 +263,6 @@ table .opcio {
     max-width: 300px;
     margin: 15px 0;
     padding: 20px;
-    background-color: var(--color-fons);
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -267,7 +277,6 @@ table .opcio {
 }
 
 .relacio a {
-    color: var(--color-primari);
     text-decoration: none;
 }
 
