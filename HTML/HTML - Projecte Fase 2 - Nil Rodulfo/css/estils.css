@@ -74,6 +74,7 @@ header {
     min-height: 65px;
     padding: 12px 0;
     border-bottom: 2px solid #cccccc;
+    background-color: var(--color-fons);
 }
 /* Únicament s'aplicaran a les unordered lists dins del header */
 header nav ul {
@@ -235,6 +236,10 @@ h2 {
     margin: 5%;
 }
 
+.formError {
+    color: red;
+    font-size: small;
+}
 /* TAULES */
 th,
 td {

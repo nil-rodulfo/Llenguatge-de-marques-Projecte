@@ -59,59 +59,48 @@ function creaTargeta(producte) {
   return articleProducte;
 }
 
-/* {
-    id: "flipper-zero",
-    titol: "Flipper Zero",
-    genere: "Electronica",
-    caracteristiques: ["Multieina portàtil", "RFID", "NFC", "GPIO"],
-    preu: 199.99,
-    valoracio: 4.8,
-    estoc: 10,
-    imatge: "img/flipper.png",
-    descripcio: "Dispositiu multifuncional per a hackers. RFID, infrarojos, GPIO i tot el necessari."
-  }
-     */
-
 // Esborra el catàleg i el torna a pintar amb la llista rebuda.
 function pintaCataleg(llista) {
   llista.forEach((producte) => cataleg.appendChild(creaTargeta(producte)));
 }
 
 // Aplica alhora la cerca per títol i el filtre per gènere i repinta.
-const cercaTitol = document.getElementById("cercaTitol")
-cercaTitol.addEventListener('input', filtraProductes)
+const cercaTitol = document.getElementById("cercaTitol");
+cercaTitol.addEventListener('input', filtraProductes);
 
-const cercaCategoria = document.getElementById("cercaCategoria")
-cercaCategoria.addEventListener('change', filtraProductes)
+const cercaCategoria = document.getElementById("cercaCategoria");
+cercaCategoria.addEventListener('change', filtraProductes);
 
-const senseProductes = document.createElement("p")
-senseProductes.textContent = "No hi ha productes amb aquestes especificacions"
+const senseProductes = document.createElement("p");
+senseProductes.textContent = "No hi ha productes amb aquestes especificacions";
 
-const menuCerca = document.getElementById("cerca")
+const menuCerca = document.getElementById("cerca");
 
 function filtraProductes() {
-  cataleg.replaceChildren()
-  const titolBuscar = cercaTitol.value.toLowerCase()
-  let quantitatProductes = 0
-  const categoriaSel = cercaCategoria.value
-  console.log(categoriaSel)
-  const totesCategories = categoriaSel === "totes"
+  cataleg.replaceChildren();
+  const titolBuscar = cercaTitol.value.toLowerCase();
+  let quantitatProductes = 0;
+  const categoriaSel = cercaCategoria.value;
+  const totesCategories = categoriaSel === "totes";
   
   PRODUCTES.forEach(producte => {
-    let titolProducte = producte.titol.toLowerCase()
+    let titolProducte = producte.titol.toLowerCase();
     if (titolProducte.includes(titolBuscar) && (totesCategories || producte.genere === categoriaSel)) {
       cataleg.appendChild(creaTargeta(producte));
-      quantitatProductes++
+      quantitatProductes++;
     }
   });
 
-  const mostrarQuants = document.createElement("div")
-  mostrarQuants.textContent = `Mostrant ${quantitatProductes} de 12`
+  const mostrarQuants = document.createElement("div");
+  mostrarQuants.id = "productesTrobats";
+  mostrarQuants.textContent = `Mostrant ${quantitatProductes} de 12`;
 
-  menuCerca.appendChild(mostrarQuants)
+  const perBorrar = document.getElementById("productesTrobats");
+  if (perBorrar !== null) {perBorrar.remove();};
+  menuCerca.appendChild(mostrarQuants);
 
   if (quantitatProductes === 0) {
-    cataleg.appendChild(senseProductes)
+    cataleg.appendChild(senseProductes);
   }
 }
 

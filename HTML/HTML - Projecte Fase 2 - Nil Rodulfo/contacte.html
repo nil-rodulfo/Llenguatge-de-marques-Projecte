@@ -27,6 +27,8 @@
                     <img id="imatgeTitol" alt="Logo" src="img/iconaTech.png"> <span id="titolPagina">Tech & Variables</span>
                 </a>
             </div>
+            
+            <button id="boto-tema">Veintitres</button>
 
             <nav>
                 <ul>
@@ -41,15 +43,15 @@
             <article id="contacte">
                 <div>
                     <h2>Contacta amb nosaltres</h2>
-                    <form action="#" method="POST">
+                    <form action="#" method="POST" id="formulariContacte" novalidate>
                         <label for="name">Nom i cognoms</label><br>
-                        <input type="text" id="name" name="name" placeholder="María García" required><br>
+                        <input type="text" id="formName" name="name" placeholder="María García" required><br><br>
 
                         <label for="email">Correu electrònic</label><br>
-                        <input type="email" id="email" name="email" placeholder="maria.garcia@gmail.com" required><br>
+                        <input type="email" id="email" name="email" placeholder="maria.garcia@gmail.com" required><br><br>
 
                         <label for="phone">Telèfon de contacte</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="123 456 789" required><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123 456 789" required><br><br>
 
                         <label for="motiuConsulta">Motiu de consulta</label><br>
 
@@ -58,7 +60,7 @@
                             <option value="papers">Papers</option>
                             <option value="interna">Gestió interna</option>
                             <option value="externa">Gestió externa</option>
-                        </select><br>
+                        </select><br><br>
 
                         <fieldset>
                             <legend>Com prefereixes que et contactem?</legend>
@@ -68,11 +70,11 @@
 
                             <input type="radio" id="contacte_telefon" name="contacte" value="Telefon">
                             <label for="contacte_telefon">Telèfon</label>
-                        </fieldset>
+                        </fieldset><br>
 
                         <label for="missatge">Missatge</label><br>
                         <textarea id="missatge" name="missatge" placeholder="Escriu aquí el teu missatge..." rows="4"
-                            cols="50"></textarea><br>
+                            cols="50"></textarea><br><br>
 
                         <input type="checkbox" id="politicaPrivacitat" name="politicaPrivacitat" required>
                         <label for="politicaPrivacitat">Accepto la política de privacitat</label><br>
